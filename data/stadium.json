@@ -1,0 +1,88 @@
+{
+  "stadium": {
+    "name": "ArenaShield National Stadium",
+    "capacity": 80000,
+    "location": "Sports City Complex"
+  },
+  "gates": [
+    {
+      "id": "Gate A",
+      "name": "North Entrance",
+      "section": "North",
+      "accessible": true,
+      "nearby_blocks": ["A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8", "A9", "A10"],
+      "amenities": ["Ticket Counter", "Information Desk", "First Aid", "Washroom"],
+      "coordinates": {"x": 0, "y": 100}
+    },
+    {
+      "id": "Gate B",
+      "name": "East Entrance",
+      "section": "East",
+      "accessible": true,
+      "nearby_blocks": ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10"],
+      "amenities": ["Ticket Counter", "First Aid", "Concession", "Washroom"],
+      "coordinates": {"x": 100, "y": 0}
+    },
+    {
+      "id": "Gate C",
+      "name": "South Entrance",
+      "section": "South",
+      "accessible": true,
+      "nearby_blocks": ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "C9", "C10"],
+      "amenities": ["Ticket Counter", "Information Desk", "First Aid", "Washroom", "Food Court"],
+      "coordinates": {"x": 0, "y": -100}
+    },
+    {
+      "id": "Gate D",
+      "name": "West Entrance",
+      "section": "West",
+      "accessible": true,
+      "nearby_blocks": ["D1", "D2", "D3", "D4", "D5", "D6", "D7", "D8", "D9", "D10"],
+      "amenities": ["Ticket Counter", "First Aid", "Concession", "Washroom", "Parking Access"],
+      "coordinates": {"x": -100, "y": 0}
+    }
+  ],
+  "seating_blocks": [
+    {"id": "A1-A10", "section": "North", "gate": "Gate A", "rows": 25, "seats_per_row": 20},
+    {"id": "B1-B10", "section": "East", "gate": "Gate B", "rows": 25, "seats_per_row": 20},
+    {"id": "C1-C10", "section": "South", "gate": "Gate C", "rows": 25, "seats_per_row": 20},
+    {"id": "D1-D10", "section": "West", "gate": "Gate D", "rows": 25, "seats_per_row": 20}
+  ],
+  "medical_rooms": [
+    {"id": "First Aid East", "location": "Gate B", "block": "East Block", "level": "Ground", "staff": "Available"},
+    {"id": "Medical Center West", "location": "Gate D", "block": "West Block", "level": "Ground", "staff": "Available"},
+    {"id": "Main Medical Suite", "location": "North Concourse", "block": "North Block", "level": "1st Floor", "staff": "Full Team"},
+    {"id": "First Aid South", "location": "Gate C", "block": "South Block", "level": "Ground", "staff": "Available"}
+  ],
+  "food_zones": [
+    {"id": "Central Food Court", "location": "Central Plaza", "cuisines": ["Burgers", "Pizza", "Asian", "Mexican"], "seating": 500},
+    {"id": "North Concession", "location": "Block A Concourse", "cuisines": ["Hot Dogs", "Nachos", "Beverages"], "seating": 100},
+    {"id": "East Bistro", "location": "Block B Concourse", "cuisines": ["Sandwiches", "Salads", "Coffee"], "seating": 150},
+    {"id": "South Grill", "location": "Block C Concourse", "cuisines": ["Mexican Grill", "Tacos", "Beverages"], "seating": 120},
+    {"id": "West Deli", "location": "Block D Concourse", "cuisines": ["Ice Cream", "Desserts", "Coffee"], "seating": 130}
+  ],
+  "washrooms": [
+    {"id": "WR-A1", "location": "Gate A", "block": "North", "accessible": true, "family": true},
+    {"id": "WR-A2", "location": "Block A", "block": "North", "accessible": true, "family": false},
+    {"id": "WR-B1", "location": "Gate B", "block": "East", "accessible": true, "family": true},
+    {"id": "WR-B2", "location": "Block B", "block": "East", "accessible": true, "family": false},
+    {"id": "WR-C1", "location": "Gate C", "block": "South", "accessible": true, "family": false},
+    {"id": "WR-C2", "location": "Block C", "block": "South", "accessible": true, "family": true},
+    {"id": "WR-D1", "location": "Gate D", "block": "West", "accessible": true, "family": true},
+    {"id": "WR-D2", "location": "Block D", "block": "West", "accessible": true, "family": false}
+  ],
+  "emergency_exits": [
+    {"id": "EX-01", "location": "Gate A North", "capacity": 500},
+    {"id": "EX-02", "location": "Gate B East", "capacity": 500},
+    {"id": "EX-03", "location": "Gate C South", "capacity": 500},
+    {"id": "EX-04", "location": "Gate D West", "capacity": 500},
+    {"id": "EX-05", "location": "Central Plaza East", "capacity": 300},
+    {"id": "EX-06", "location": "Central Plaza West", "capacity": 300}
+  ],
+  "accessibility": {
+    "wheelchair_routes": ["All gates have ramp access", "Elevators at Block A, C, Central Plaza"],
+    "special_assistance": "Available at all gates and information desks",
+    "accessible_seating": ["Block A: Rows 1-2", "Block B: Rows 1-2", "Block C: Rows 1-2", "Block D: Rows 1-2"],
+    "service_animals": "Welcome throughout the stadium"
+  }
+}

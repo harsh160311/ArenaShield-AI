@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArenaShield AI - Fan Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-brand">
+            <i class="fas fa-shield-haltered" aria-hidden="true"></i>
+            <span>ArenaShield AI</span>
+        </div>
+        <div class="nav-links">
+            <a href="/" class="nav-link active" aria-current="page"><i class="fas fa-user"></i> Fan</a>
+            <a href="/dashboard" class="nav-link"><i class="fas fa-chart-bar"></i> Ops</a>
+        </div>
+        <div class="nav-search" id="navbarSearch">
+            <i class="fas fa-search"></i>
+            <input type="text" id="navStadiumSearch" placeholder="Search stadium..." autocomplete="off" aria-label="Search stadiums">
+        </div>
+        <div class="nav-right">
+            <span class="live-badge" id="liveBadge"><i class="fas fa-circle"></i> LIVE</span>
+        </div>
+    </nav>
+
+    <div id="stadiumSelector" class="stadium-selector-overlay" style="display:none;">
+        <div class="stadium-selector-modal">
+            <div class="selector-header">
+                <button id="closeStadiumSelector" class="selector-close" aria-label="Close">&times;</button>
+                <i class="fas fa-shield-haltered"></i>
+                <h1>ArenaShield AI</h1>
+                <p>Search your stadium</p>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="stadiumSearch" placeholder="Type a stadium name or country..." autocomplete="off" aria-label="Search stadiums">
+                <button id="clearSearchBtn" class="search-clear" aria-label="Clear search"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="search-results" id="searchResults">
+                <div class="search-hint">
+                    <i class="fas fa-globe"></i>
+                    <span>700+ stadiums — search or click "Use default stadium" below</span>
+                </div>
+            </div>
+            <div class="selector-footer">
+                <button id="skipStadiumBtn" class="btn-link">Use default stadium</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="fan-layout" id="fanLayout">
+        <section class="chat-section" aria-label="AI Chat Assistant">
+            <div class="chat-header">
+                <div>
+                    <h1><i class="fas fa-robot"></i> AI Concierge</h1>
+                    <p class="chat-subtitle" id="currentStadiumName">Your personal stadium assistant</p>
+                </div>
+                <div class="header-right">
+                    <button id="changeStadiumBtn" class="btn-change-stadium" title="Change stadium">
+                        <i class="fas fa-building"></i>
+                    </button>
+                    <div class="language-selector">
+                        <label for="lang-select" class="sr-only">Select language</label>
+                        <select id="lang-select" aria-label="Select language">
+                            <option value="en" selected>English</option>
+                            <option value="es">Español</option>
+                            <option value="hi">हिन्दी</option>
+                            <option value="fr">Français</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-label="Chat messages">
+                <div class="message assistant">
+                    <div class="message-icon"><i class="fas fa-robot"></i></div>
+                    <div class="message-content">
+                        <p>Welcome to ArenaShield AI! Stadium loaded. I can help you with:</p>
+                        <ul>
+                            <li>📍 Finding your seat or gate</li>
+                            <li>🚑 Medical assistance</li>
+                            <li>🍔 Food &amp; amenities</li>
+                            <li>♿ Accessibility support</li>
+                            <li>🚌 Transport info</li>
+                            <li>📊 Crowd status</li>
+                        </ul>
+                        <p><strong>How can I help you today?</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <div class="quick-actions" id="quickActions" role="toolbar" aria-label="Quick actions">
+                    <button class="quick-btn" data-msg="I need medical help" aria-label="Medical help">
+                        <i class="fas fa-heartbeat"></i> Medical
+                    </button>
+                    <button class="quick-btn" data-msg="Where is my seat? I am at Gate A. My seat is B204" aria-label="Find seat">
+                        <i class="fas fa-map-marker-alt"></i> Find Seat
+                    </button>
+                    <button class="quick-btn" data-msg="Where can I get food?" aria-label="Find food">
+                        <i class="fas fa-utensils"></i> Food
+                    </button>
+                    <button class="quick-btn" data-msg="Emergency! What should I do?" aria-label="Emergency">
+                        <i class="fas fa-exclamation-triangle"></i> Emergency
+                    </button>
+                </div>
+                <form id="chatForm" class="input-row" aria-label="Chat input">
+                    <input
+                        type="text"
+                        id="chatInput"
+                        placeholder="Ask me anything about the stadium..."
+                        autocomplete="off"
+                        aria-label="Type your message"
+                        required
+                    >
+                    <button type="submit" id="sendBtn" aria-label="Send message">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <aside class="info-panel" aria-label="Stadium information panel">
+            <div class="info-card stadium-info-card">
+                <h3><i class="fas fa-building"></i> Current Stadium</h3>
+                <div id="sidebarStadiumName" class="sidebar-stadium-name">Loading...</div>
+                <button id="changeStadiumSidebarBtn" class="btn-sidebar-search">
+                    <i class="fas fa-search"></i> Change Stadium
+                </button>
+            </div>
+            <div class="info-card">
+                <h3><i class="fas fa-info-circle"></i> Live Info</h3>
+                <div id="liveInfo">
+                    <div class="info-loader"><i class="fas fa-spinner fa-spin"></i> Loading...</div>
+                </div>
+            </div>
+            <button id="emergencyBtn" class="emergency-sos" aria-label="Emergency SOS">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>SOS<br>Emergency</span>
+            </button>
+            <div class="info-card">
+                <h3><i class="fas fa-lightbulb"></i> Tips</h3>
+                <ul class="tips-list">
+                    <li>Use less crowded gates</li>
+                    <li>Download stadium map</li>
+                    <li>Arrive 30min before event</li>
+                    <li>Locate nearest exit on arrival</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <div id="emergencyModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="emergencyTitle" style="display:none;">
+        <div class="modal-content emergency-modal">
+            <div class="emergency-header">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h2 id="emergencyTitle">Emergency Assistance</h2>
+            </div>
+            <div class="emergency-body">
+                <div class="emergency-contacts">
+                    <div class="contact-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Security: <strong>Ext. 100</strong></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-ambulance"></i>
+                        <span>Medical: <strong>Ext. 911</strong></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-fire-extinguisher"></i>
+                        <span>Fire: <strong>Ext. 101</strong></span>
+                    </div>
+                </div>
+                <p class="emergency-instructions">
+                    Stay calm. Follow staff instructions. Proceed to nearest exit.
+                </p>
+                <button class="btn-primary" onclick="closeEmergencyModal()">
+                    I understand
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

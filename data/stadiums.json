@@ -1,0 +1,5422 @@
+{
+  "stadiums": [
+    {
+      "id": "arenashield-national",
+      "name": "ArenaShield National Stadium",
+      "location": "Sports City",
+      "country": "International",
+      "capacity": 80000
+    },
+    {
+      "id": "wembley",
+      "name": "Wembley Stadium",
+      "location": "London",
+      "country": "England",
+      "capacity": 90000
+    },
+    {
+      "id": "old-trafford",
+      "name": "Old Trafford",
+      "location": "Manchester",
+      "country": "England",
+      "capacity": 74310
+    },
+    {
+      "id": "emirates",
+      "name": "Emirates Stadium",
+      "location": "London",
+      "country": "England",
+      "capacity": 60704
+    },
+    {
+      "id": "tottenham",
+      "name": "Tottenham Hotspur Stadium",
+      "location": "London",
+      "country": "England",
+      "capacity": 62850
+    },
+    {
+      "id": "anfield",
+      "name": "Anfield",
+      "location": "Liverpool",
+      "country": "England",
+      "capacity": 53394
+    },
+    {
+      "id": "etihad",
+      "name": "Etihad Stadium",
+      "location": "Manchester",
+      "country": "England",
+      "capacity": 53400
+    },
+    {
+      "id": "stamford-bridge",
+      "name": "Stamford Bridge",
+      "location": "London",
+      "country": "England",
+      "capacity": 40341
+    },
+    {
+      "id": "villa-park",
+      "name": "Villa Park",
+      "location": "Birmingham",
+      "country": "England",
+      "capacity": 42682
+    },
+    {
+      "id": "st-james-park",
+      "name": "St. James' Park",
+      "location": "Newcastle",
+      "country": "England",
+      "capacity": 52305
+    },
+    {
+      "id": "london-stadium",
+      "name": "London Stadium",
+      "location": "London",
+      "country": "England",
+      "capacity": 60000
+    },
+    {
+      "id": "santiago-bernabeu",
+      "name": "Santiago Bernabeu",
+      "location": "Madrid",
+      "country": "Spain",
+      "capacity": 81044
+    },
+    {
+      "id": "camp-nou",
+      "name": "Camp Nou",
+      "location": "Barcelona",
+      "country": "Spain",
+      "capacity": 99354
+    },
+    {
+      "id": "wanda-metropolitano",
+      "name": "Civitas Metropolitano",
+      "location": "Madrid",
+      "country": "Spain",
+      "capacity": 70460
+    },
+    {
+      "id": "benito-villamarin",
+      "name": "Benito Villamarin",
+      "location": "Seville",
+      "country": "Spain",
+      "capacity": 60721
+    },
+    {
+      "id": "san-mames",
+      "name": "San Mames",
+      "location": "Bilbao",
+      "country": "Spain",
+      "capacity": 53289
+    },
+    {
+      "id": "ramon-sanchez",
+      "name": "Ramon Sanchez Pizjuan",
+      "location": "Seville",
+      "country": "Spain",
+      "capacity": 43883
+    },
+    {
+      "id": "mestalla",
+      "name": "Mestalla",
+      "location": "Valencia",
+      "country": "Spain",
+      "capacity": 49430
+    },
+    {
+      "id": "allianz-arena",
+      "name": "Allianz Arena",
+      "location": "Munich",
+      "country": "Germany",
+      "capacity": 75024
+    },
+    {
+      "id": "signal-iduna",
+      "name": "Signal Iduna Park",
+      "location": "Dortmund",
+      "country": "Germany",
+      "capacity": 81365
+    },
+    {
+      "id": "olympiastadion-berlin",
+      "name": "Olympiastadion Berlin",
+      "location": "Berlin",
+      "country": "Germany",
+      "capacity": 74475
+    },
+    {
+      "id": "mercedes-benz-arena",
+      "name": "MHPArena",
+      "location": "Stuttgart",
+      "country": "Germany",
+      "capacity": 60449
+    },
+    {
+      "id": "red-bull-arena-leipzig",
+      "name": "Red Bull Arena",
+      "location": "Leipzig",
+      "country": "Germany",
+      "capacity": 42959
+    },
+    {
+      "id": "volksparkstadion",
+      "name": "Volksparkstadion",
+      "location": "Hamburg",
+      "country": "Germany",
+      "capacity": 57030
+    },
+    {
+      "id": "deutsche-bank-park",
+      "name": "Deutsche Bank Park",
+      "location": "Frankfurt",
+      "country": "Germany",
+      "capacity": 51500
+    },
+    {
+      "id": "borussia-park",
+      "name": "Borussia-Park",
+      "location": "Monchengladbach",
+      "country": "Germany",
+      "capacity": 54057
+    },
+    {
+      "id": "san-siro",
+      "name": "San Siro (Giuseppe Meazza)",
+      "location": "Milan",
+      "country": "Italy",
+      "capacity": 75923
+    },
+    {
+      "id": "juventus-stadium",
+      "name": "Allianz Stadium",
+      "location": "Turin",
+      "country": "Italy",
+      "capacity": 41507
+    },
+    {
+      "id": "stadio-olimpico",
+      "name": "Stadio Olimpico",
+      "location": "Rome",
+      "country": "Italy",
+      "capacity": 70634
+    },
+    {
+      "id": "stadio-diego",
+      "name": "Stadio Diego Armando Maradona",
+      "location": "Naples",
+      "country": "Italy",
+      "capacity": 54726
+    },
+    {
+      "id": "stadio-artemio-franchi",
+      "name": "Stadio Artemio Franchi",
+      "location": "Florence",
+      "country": "Italy",
+      "capacity": 43147
+    },
+    {
+      "id": "parc-des-princes",
+      "name": "Parc des Princes",
+      "location": "Paris",
+      "country": "France",
+      "capacity": 48712
+    },
+    {
+      "id": "stade-de-france",
+      "name": "Stade de France",
+      "location": "Saint-Denis",
+      "country": "France",
+      "capacity": 81338
+    },
+    {
+      "id": "stade-velodrome",
+      "name": "Orange Velodrome",
+      "location": "Marseille",
+      "country": "France",
+      "capacity": 67394
+    },
+    {
+      "id": "groupama-stadium",
+      "name": "Groupama Stadium",
+      "location": "Lyon",
+      "country": "France",
+      "capacity": 59186
+    },
+    {
+      "id": "stade-pierre-mauroy",
+      "name": "Stade Pierre-Mauroy",
+      "location": "Lille",
+      "country": "France",
+      "capacity": 50186
+    },
+    {
+      "id": "matmut-atlantique",
+      "name": "Matmut Atlantique",
+      "location": "Bordeaux",
+      "country": "France",
+      "capacity": 42115
+    },
+    {
+      "id": "luis-companys",
+      "name": "Estadi Olimpic Lluis Companys",
+      "location": "Barcelona",
+      "country": "Spain",
+      "capacity": 55626
+    },
+    {
+      "id": "johan-cruyff-arena",
+      "name": "Johan Cruijff ArenA",
+      "location": "Amsterdam",
+      "country": "Netherlands",
+      "capacity": 55000
+    },
+    {
+      "id": "de-kuip",
+      "name": "De Kuip",
+      "location": "Rotterdam",
+      "country": "Netherlands",
+      "capacity": 51117
+    },
+    {
+      "id": "psv-stadium",
+      "name": "Philips Stadion",
+      "location": "Eindhoven",
+      "country": "Netherlands",
+      "capacity": 35000
+    },
+    {
+      "id": "estadio-da-luz",
+      "name": "Estadio da Luz",
+      "location": "Lisbon",
+      "country": "Portugal",
+      "capacity": 64642
+    },
+    {
+      "id": "estadio-do-dragao",
+      "name": "Estadio do Dragao",
+      "location": "Porto",
+      "country": "Portugal",
+      "capacity": 50033
+    },
+    {
+      "id": "jose-alvalade",
+      "name": "Estadio Jose Alvalade",
+      "location": "Lisbon",
+      "country": "Portugal",
+      "capacity": 50466
+    },
+    {
+      "id": "maracana",
+      "name": "Estadio do Maracana",
+      "location": "Rio de Janeiro",
+      "country": "Brazil",
+      "capacity": 78838
+    },
+    {
+      "id": "morangueira",
+      "name": "Estadio Beira-Rio",
+      "location": "Porto Alegre",
+      "country": "Brazil",
+      "capacity": 50842
+    },
+    {
+      "id": "mineirao",
+      "name": "Estadio Mineirao",
+      "location": "Belo Horizonte",
+      "country": "Brazil",
+      "capacity": 61846
+    },
+    {
+      "id": "castelao",
+      "name": "Arena Castelao",
+      "location": "Fortaleza",
+      "country": "Brazil",
+      "capacity": 63903
+    },
+    {
+      "id": "corinthians",
+      "name": "Neo Quimica Arena",
+      "location": "Sao Paulo",
+      "country": "Brazil",
+      "capacity": 49205
+    },
+    {
+      "id": "monumental",
+      "name": "Estadio Monumental",
+      "location": "Lima",
+      "country": "Peru",
+      "capacity": 80093
+    },
+    {
+      "id": "nacional-lima",
+      "name": "Estadio Nacional",
+      "location": "Lima",
+      "country": "Peru",
+      "capacity": 50000
+    },
+    {
+      "id": "centenario",
+      "name": "Estadio Centenario",
+      "location": "Montevideo",
+      "country": "Uruguay",
+      "capacity": 60235
+    },
+    {
+      "id": "campus-municipal",
+      "name": "Estadio Nacional de Chile",
+      "location": "Santiago",
+      "country": "Chile",
+      "capacity": 48665
+    },
+    {
+      "id": "monumental-chile",
+      "name": "Estadio Monumental David Arellano",
+      "location": "Santiago",
+      "country": "Chile",
+      "capacity": 47647
+    },
+    {
+      "id": "el-monumental",
+      "name": "Estadio Mas Monumental",
+      "location": "Buenos Aires",
+      "country": "Argentina",
+      "capacity": 84000
+    },
+    {
+      "id": "la-bombonera",
+      "name": "La Bombonera",
+      "location": "Buenos Aires",
+      "country": "Argentina",
+      "capacity": 54000
+    },
+    {
+      "id": "juan-peron",
+      "name": "Estadio Presidente Peron",
+      "location": "Avellaneda",
+      "country": "Argentina",
+      "capacity": 51000
+    },
+    {
+      "id": "azteca",
+      "name": "Estadio Azteca",
+      "location": "Mexico City",
+      "country": "Mexico",
+      "capacity": 87523
+    },
+    {
+      "id": "bbva",
+      "name": "Estadio BBVA",
+      "location": "Monterrey",
+      "country": "Mexico",
+      "capacity": 53500
+    },
+    {
+      "id": "akron",
+      "name": "Estadio Akron",
+      "location": "Zapopan",
+      "country": "Mexico",
+      "capacity": 46232
+    },
+    {
+      "id": "universitario",
+      "name": "Estadio Universitario",
+      "location": "San Nicolas",
+      "country": "Mexico",
+      "capacity": 42000
+    },
+    {
+      "id": "metropolitano-mexico",
+      "name": "Estadio Metropolitano",
+      "location": "Mexico City",
+      "country": "Mexico",
+      "capacity": 70300
+    },
+    {
+      "id": "lucien-brun",
+      "name": "Estadio Nacional de Brasilia",
+      "location": "Brasilia",
+      "country": "Brazil",
+      "capacity": 72788
+    },
+    {
+      "id": "arena-fonte-nova",
+      "name": "Arena Fonte Nova",
+      "location": "Salvador",
+      "country": "Brazil",
+      "capacity": 48000
+    },
+    {
+      "id": "arena-da-baixada",
+      "name": "Ligga Arena",
+      "location": "Curitiba",
+      "country": "Brazil",
+      "capacity": 42600
+    },
+    {
+      "id": "arena-amazonia",
+      "name": "Arena Amazonia",
+      "location": "Manaus",
+      "country": "Brazil",
+      "capacity": 44300
+    },
+    {
+      "id": "metlife",
+      "name": "MetLife Stadium",
+      "location": "East Rutherford",
+      "country": "USA",
+      "capacity": 82500
+    },
+    {
+      "id": "sofi",
+      "name": "SoFi Stadium",
+      "location": "Inglewood",
+      "country": "USA",
+      "capacity": 70240
+    },
+    {
+      "id": "mercedes-benz",
+      "name": "Mercedes-Benz Stadium",
+      "location": "Atlanta",
+      "country": "USA",
+      "capacity": 71000
+    },
+    {
+      "id": "atandt",
+      "name": "AT&T Stadium",
+      "location": "Arlington",
+      "country": "USA",
+      "capacity": 80000
+    },
+    {
+      "id": "levis",
+      "name": "Levi's Stadium",
+      "location": "Santa Clara",
+      "country": "USA",
+      "capacity": 68500
+    },
+    {
+      "id": "allegiant",
+      "name": "Allegiant Stadium",
+      "location": "Las Vegas",
+      "country": "USA",
+      "capacity": 65000
+    },
+    {
+      "id": "arrowhead",
+      "name": "Arrowhead Stadium",
+      "location": "Kansas City",
+      "country": "USA",
+      "capacity": 76416
+    },
+    {
+      "id": "lambeau",
+      "name": "Lambeau Field",
+      "location": "Green Bay",
+      "country": "USA",
+      "capacity": 81441
+    },
+    {
+      "id": "rose-bowl",
+      "name": "Rose Bowl",
+      "location": "Pasadena",
+      "country": "USA",
+      "capacity": 92542
+    },
+    {
+      "id": "hard-rock",
+      "name": "Hard Rock Stadium",
+      "location": "Miami Gardens",
+      "country": "USA",
+      "capacity": 65326
+    },
+    {
+      "id": "gillette",
+      "name": "Gillette Stadium",
+      "location": "Foxborough",
+      "country": "USA",
+      "capacity": 65878
+    },
+    {
+      "id": "lumen-field",
+      "name": "Lumen Field",
+      "location": "Seattle",
+      "country": "USA",
+      "capacity": 68740
+    },
+    {
+      "id": "bmo-field",
+      "name": "BMO Field",
+      "location": "Toronto",
+      "country": "Canada",
+      "capacity": 30000
+    },
+    {
+      "id": "bc-place",
+      "name": "BC Place",
+      "location": "Vancouver",
+      "country": "Canada",
+      "capacity": 54500
+    },
+    {
+      "id": "olympic-stadium-montreal",
+      "name": "Olympic Stadium",
+      "location": "Montreal",
+      "country": "Canada",
+      "capacity": 56140
+    },
+    {
+      "id": "commonwealth-edmonton",
+      "name": "Commonwealth Stadium",
+      "location": "Edmonton",
+      "country": "Canada",
+      "capacity": 56100
+    },
+    {
+      "id": "luzhniki",
+      "name": "Luzhniki Stadium",
+      "location": "Moscow",
+      "country": "Russia",
+      "capacity": 81006
+    },
+    {
+      "id": "gazprom-arena",
+      "name": "Gazprom Arena",
+      "location": "Saint Petersburg",
+      "country": "Russia",
+      "capacity": 68134
+    },
+    {
+      "id": "fisht",
+      "name": "Fisht Olympic Stadium",
+      "location": "Sochi",
+      "country": "Russia",
+      "capacity": 47659
+    },
+    {
+      "id": "kazan-arena",
+      "name": "Ak Bars Arena",
+      "location": "Kazan",
+      "country": "Russia",
+      "capacity": 45105
+    },
+    {
+      "id": "nstadium-ekaterinburg",
+      "name": "Central Stadium",
+      "location": "Yekaterinburg",
+      "country": "Russia",
+      "capacity": 35696
+    },
+    {
+      "id": "rostov-arena",
+      "name": "Rostov Arena",
+      "location": "Rostov-on-Don",
+      "country": "Russia",
+      "capacity": 45000
+    },
+    {
+      "id": "nstadium-samara",
+      "name": "Solidarnost Arena",
+      "location": "Samara",
+      "country": "Russia",
+      "capacity": 44918
+    },
+    {
+      "id": "volgograd-arena",
+      "name": "Volgograd Arena",
+      "location": "Volgograd",
+      "country": "Russia",
+      "capacity": 45568
+    },
+    {
+      "id": "nstadium-nizhny",
+      "name": "Nizhny Novgorod Stadium",
+      "location": "Nizhny Novgorod",
+      "country": "Russia",
+      "capacity": 44899
+    },
+    {
+      "id": "mordovia-arena",
+      "name": "Mordovia Arena",
+      "location": "Saransk",
+      "country": "Russia",
+      "capacity": 44442
+    },
+    {
+      "id": "kaliningrad",
+      "name": "Kaliningrad Stadium",
+      "location": "Kaliningrad",
+      "country": "Russia",
+      "capacity": 35212
+    },
+    {
+      "id": "nsc-olympic",
+      "name": "NSC Olympiyskiy",
+      "location": "Kyiv",
+      "country": "Ukraine",
+      "capacity": 70050
+    },
+    {
+      "id": "bernabau",
+      "name": "Estadio Santiago Bernabeu",
+      "location": "Madrid",
+      "country": "Spain",
+      "capacity": 81044
+    },
+    {
+      "id": "nsc-kyiv",
+      "name": "NSC Olimpiyskiy",
+      "location": "Kyiv",
+      "country": "Ukraine",
+      "capacity": 70050
+    },
+    {
+      "id": "olympiastadion-helsinki",
+      "name": "Helsinki Olympic Stadium",
+      "location": "Helsinki",
+      "country": "Finland",
+      "capacity": 36200
+    },
+    {
+      "id": "friends-arena",
+      "name": "Friends Arena",
+      "location": "Stockholm",
+      "country": "Sweden",
+      "capacity": 50115
+    },
+    {
+      "id": "ullevi",
+      "name": "Ullevi",
+      "location": "Gothenburg",
+      "country": "Sweden",
+      "capacity": 43400
+    },
+    {
+      "id": "parken",
+      "name": "Parken Stadium",
+      "location": "Copenhagen",
+      "country": "Denmark",
+      "capacity": 38065
+    },
+    {
+      "id": "telia-parken",
+      "name": "Telia Parken",
+      "location": "Copenhagen",
+      "country": "Denmark",
+      "capacity": 38065
+    },
+    {
+      "id": "ullevaal",
+      "name": "Ullevaal Stadion",
+      "location": "Oslo",
+      "country": "Norway",
+      "capacity": 28500
+    },
+    {
+      "id": "national-warsaw",
+      "name": "PGE Narodowy",
+      "location": "Warsaw",
+      "country": "Poland",
+      "capacity": 58328
+    },
+    {
+      "id": "stadion-slaski",
+      "name": "Stadion Slaski",
+      "location": "Chorzow",
+      "country": "Poland",
+      "capacity": 54630
+    },
+    {
+      "id": "ferenc-puskas",
+      "name": "Puskas Arena",
+      "location": "Budapest",
+      "country": "Hungary",
+      "capacity": 67215
+    },
+    {
+      "id": "rajko-mitic",
+      "name": "Stadion Rajko Mitic",
+      "location": "Belgrade",
+      "country": "Serbia",
+      "capacity": 55430
+    },
+    {
+      "id": "ataturk-olympic",
+      "name": "Ataturk Olympic Stadium",
+      "location": "Istanbul",
+      "country": "Turkey",
+      "capacity": 76861
+    },
+    {
+      "id": "ali-sami-yen",
+      "name": "Rams Park",
+      "location": "Istanbul",
+      "country": "Turkey",
+      "capacity": 52468
+    },
+    {
+      "id": "sukru-saracoglu",
+      "name": "Ulker Stadium",
+      "location": "Istanbul",
+      "country": "Turkey",
+      "capacity": 47530
+    },
+    {
+      "id": "timsah-arena",
+      "name": "Kocaeli Stadium",
+      "location": "Kocaeli",
+      "country": "Turkey",
+      "capacity": 33000
+    },
+    {
+      "id": "king-abdullah",
+      "name": "King Abdullah Sports City",
+      "location": "Jeddah",
+      "country": "Saudi Arabia",
+      "capacity": 62000
+    },
+    {
+      "id": "king-fahd",
+      "name": "King Fahd International Stadium",
+      "location": "Riyadh",
+      "country": "Saudi Arabia",
+      "capacity": 68752
+    },
+    {
+      "id": "king-saud",
+      "name": "King Saud University Stadium",
+      "location": "Riyadh",
+      "country": "Saudi Arabia",
+      "capacity": 25000
+    },
+    {
+      "id": "prince-faisal",
+      "name": "Prince Faisal bin Fahd Stadium",
+      "location": "Riyadh",
+      "country": "Saudi Arabia",
+      "capacity": 44400
+    },
+    {
+      "id": "l974",
+      "name": "Stadium 974",
+      "location": "Doha",
+      "country": "Qatar",
+      "capacity": 44089
+    },
+    {
+      "id": "al-bayt",
+      "name": "Al Bayt Stadium",
+      "location": "Al Khor",
+      "country": "Qatar",
+      "capacity": 68895
+    },
+    {
+      "id": "lusail",
+      "name": "Lusail Stadium",
+      "location": "Lusail",
+      "country": "Qatar",
+      "capacity": 88866
+    },
+    {
+      "id": "ahmad-bin-ali",
+      "name": "Ahmad bin Ali Stadium",
+      "location": "Al Rayyan",
+      "country": "Qatar",
+      "capacity": 45032
+    },
+    {
+      "id": "al-thumama",
+      "name": "Al Thumama Stadium",
+      "location": "Doha",
+      "country": "Qatar",
+      "capacity": 44400
+    },
+    {
+      "id": "education-city",
+      "name": "Education City Stadium",
+      "location": "Al Rayyan",
+      "country": "Qatar",
+      "capacity": 45350
+    },
+    {
+      "id": "khalifa",
+      "name": "Khalifa International Stadium",
+      "location": "Doha",
+      "country": "Qatar",
+      "capacity": 45857
+    },
+    {
+      "id": "al-janoub",
+      "name": "Al Janoub Stadium",
+      "location": "Al Wakrah",
+      "country": "Qatar",
+      "capacity": 44325
+    },
+    {
+      "id": "nagyerdei",
+      "name": "Nagyerdei Stadion",
+      "location": "Debrecen",
+      "country": "Hungary",
+      "capacity": 20340
+    },
+    {
+      "id": "tehelne-pole",
+      "name": "Tehelne Pole",
+      "location": "Bratislava",
+      "country": "Slovakia",
+      "capacity": 22500
+    },
+    {
+      "id": "sinobo",
+      "name": "Sinobo Stadium",
+      "location": "Prague",
+      "country": "Czech Republic",
+      "capacity": 21350
+    },
+    {
+      "id": "generali-arena",
+      "name": "Generali Arena",
+      "location": "Prague",
+      "country": "Czech Republic",
+      "capacity": 19130
+    },
+    {
+      "id": "ali-park",
+      "name": "Ali Park Stadium",
+      "location": "Anderlecht",
+      "country": "Belgium",
+      "capacity": 22500
+    },
+    {
+      "id": "king-baudouin",
+      "name": "King Baudouin Stadium",
+      "location": "Brussels",
+      "country": "Belgium",
+      "capacity": 50122
+    },
+    {
+      "id": "jan-breydel",
+      "name": "Jan Breydel Stadium",
+      "location": "Bruges",
+      "country": "Belgium",
+      "capacity": 29062
+    },
+    {
+      "id": "cristal-arena",
+      "name": "Cristal Arena",
+      "location": "Genk",
+      "country": "Belgium",
+      "capacity": 24956
+    },
+    {
+      "id": "nike-arena",
+      "name": "Nike Arena",
+      "location": "Tiraspol",
+      "country": "Moldova",
+      "capacity": 12800
+    },
+    {
+      "id": "sheriff",
+      "name": "Sheriff Stadium",
+      "location": "Tiraspol",
+      "country": "Moldova",
+      "capacity": 12746
+    },
+    {
+      "id": "zgornji-brezig",
+      "name": "Stadion Zgornji Brezig",
+      "location": "Maribor",
+      "country": "Slovenia",
+      "capacity": 12000
+    },
+    {
+      "id": "stopnja",
+      "name": "Stozice Stadium",
+      "location": "Ljubljana",
+      "country": "Slovenia",
+      "capacity": 16290
+    },
+    {
+      "id": "celje",
+      "name": "Stadion Celje",
+      "location": "Celje",
+      "country": "Slovenia",
+      "capacity": 13320
+    },
+    {
+      "id": "bonifika",
+      "name": "Bonifika Stadium",
+      "location": "Koper",
+      "country": "Slovenia",
+      "capacity": 10040
+    },
+    {
+      "id": "maksimir",
+      "name": "Stadion Maksimir",
+      "location": "Zagreb",
+      "country": "Croatia",
+      "capacity": 38173
+    },
+    {
+      "id": "poljud",
+      "name": "Stadion Poljud",
+      "location": "Split",
+      "country": "Croatia",
+      "capacity": 34198
+    },
+    {
+      "id": "opetrov",
+      "name": "Stadion Radnik",
+      "location": "Velika Gorica",
+      "country": "Croatia",
+      "capacity": 8000
+    },
+    {
+      "id": "gradski-vrt",
+      "name": "Stadion Gradski Vrt",
+      "location": "Osijek",
+      "country": "Croatia",
+      "capacity": 22050
+    },
+    {
+      "id": "rujevica",
+      "name": "Stadion Rujevica",
+      "location": "Rijeka",
+      "country": "Croatia",
+      "capacity": 8279
+    },
+    {
+      "id": "grbavica",
+      "name": "Stadion Grbavica",
+      "location": "Sarajevo",
+      "country": "Bosnia",
+      "capacity": 16000
+    },
+    {
+      "id": "bilino-polje",
+      "name": "Bilino Polje",
+      "location": "Zenica",
+      "country": "Bosnia",
+      "capacity": 15292
+    },
+    {
+      "id": "asim-ferhatovic",
+      "name": "Stadion Asim Ferhatovic",
+      "location": "Sarajevo",
+      "country": "Bosnia",
+      "capacity": 35630
+    },
+    {
+      "id": "tose-proeski",
+      "name": "Tose Proeski Arena",
+      "location": "Skopje",
+      "country": "North Macedonia",
+      "capacity": 36000
+    },
+    {
+      "id": "fadil-vokrri",
+      "name": "Fadil Vokrri Stadium",
+      "location": "Pristina",
+      "country": "Kosovo",
+      "capacity": 13800
+    },
+    {
+      "id": "kombetare",
+      "name": "Arena Kombetare",
+      "location": "Tirana",
+      "country": "Albania",
+      "capacity": 22500
+    },
+    {
+      "id": "stanford",
+      "name": "Stanford Stadium",
+      "location": "Stanford",
+      "country": "USA",
+      "capacity": 50424
+    },
+    {
+      "id": "yale-bowl",
+      "name": "Yale Bowl",
+      "location": "New Haven",
+      "country": "USA",
+      "capacity": 61446
+    },
+    {
+      "id": "michigan",
+      "name": "Michigan Stadium",
+      "location": "Ann Arbor",
+      "country": "USA",
+      "capacity": 107601
+    },
+    {
+      "id": "ohio",
+      "name": "Ohio Stadium",
+      "location": "Columbus",
+      "country": "USA",
+      "capacity": 102780
+    },
+    {
+      "id": "beaver",
+      "name": "Beaver Stadium",
+      "location": "State College",
+      "country": "USA",
+      "capacity": 106572
+    },
+    {
+      "id": "tiger",
+      "name": "Tiger Stadium",
+      "location": "Baton Rouge",
+      "country": "USA",
+      "capacity": 102321
+    },
+    {
+      "id": "bryant-denny",
+      "name": "Bryant-Denny Stadium",
+      "location": "Tuscaloosa",
+      "country": "USA",
+      "capacity": 100077
+    },
+    {
+      "id": "darrell-k-royal",
+      "name": "Darrell K Royal Stadium",
+      "location": "Austin",
+      "country": "USA",
+      "capacity": 100119
+    },
+    {
+      "id": "sydney-cricket-ground",
+      "name": "Sydney Cricket Ground",
+      "location": "Sydney",
+      "country": "Australia",
+      "capacity": 48000
+    },
+    {
+      "id": "anz-stadium",
+      "name": "Accor Stadium",
+      "location": "Sydney",
+      "country": "Australia",
+      "capacity": 83500
+    },
+    {
+      "id": "mcg",
+      "name": "Melbourne Cricket Ground",
+      "location": "Melbourne",
+      "country": "Australia",
+      "capacity": 100024
+    },
+    {
+      "id": "marvel-stadium",
+      "name": "Docklands Stadium",
+      "location": "Melbourne",
+      "country": "Australia",
+      "capacity": 56000
+    },
+    {
+      "id": "lang-park",
+      "name": "Lang Park",
+      "location": "Brisbane",
+      "country": "Australia",
+      "capacity": 52500
+    },
+    {
+      "id": "optus-stadium",
+      "name": "Optus Stadium",
+      "location": "Perth",
+      "country": "Australia",
+      "capacity": 61300
+    },
+    {
+      "id": "adelaide-oval",
+      "name": "Adelaide Oval",
+      "location": "Adelaide",
+      "country": "Australia",
+      "capacity": 53500
+    },
+    {
+      "id": "eden-park",
+      "name": "Eden Park",
+      "location": "Auckland",
+      "country": "New Zealand",
+      "capacity": 50000
+    },
+    {
+      "id": "sky-stadium",
+      "name": "Sky Stadium",
+      "location": "Wellington",
+      "country": "New Zealand",
+      "capacity": 34000
+    },
+    {
+      "id": "fifa-world-cup",
+      "name": "FIFA World Cup Stadium",
+      "location": "Seoul",
+      "country": "South Korea",
+      "capacity": 66704
+    },
+    {
+      "id": "seoul-world-cup",
+      "name": "Seoul World Cup Stadium",
+      "location": "Seoul",
+      "country": "South Korea",
+      "capacity": 66704
+    },
+    {
+      "id": "suwon",
+      "name": "Suwon World Cup Stadium",
+      "location": "Suwon",
+      "country": "South Korea",
+      "capacity": 44031
+    },
+    {
+      "id": "busan-asiad",
+      "name": "Busan Asiad Stadium",
+      "location": "Busan",
+      "country": "South Korea",
+      "capacity": 53388
+    },
+    {
+      "id": "daegu",
+      "name": "Daegu Stadium",
+      "location": "Daegu",
+      "country": "South Korea",
+      "capacity": 66422
+    },
+    {
+      "id": "incheon",
+      "name": "Incheon Munhak Stadium",
+      "location": "Incheon",
+      "country": "South Korea",
+      "capacity": 50256
+    },
+    {
+      "id": "ulsan",
+      "name": "Ulsan Munsu Stadium",
+      "location": "Ulsan",
+      "country": "South Korea",
+      "capacity": 44102
+    },
+    {
+      "id": "jeonju",
+      "name": "Jeonju World Cup Stadium",
+      "location": "Jeonju",
+      "country": "South Korea",
+      "capacity": 42277
+    },
+    {
+      "id": "daejeon",
+      "name": "Daejeon World Cup Stadium",
+      "location": "Daejeon",
+      "country": "South Korea",
+      "capacity": 40957
+    },
+    {
+      "id": "gwangju",
+      "name": "Gwangju World Cup Stadium",
+      "location": "Gwangju",
+      "country": "South Korea",
+      "capacity": 40850
+    },
+    {
+      "id": "nissan",
+      "name": "Nissan Stadium",
+      "location": "Yokohama",
+      "country": "Japan",
+      "capacity": 72327
+    },
+    {
+      "id": "saitama",
+      "name": "Saitama Stadium 2002",
+      "location": "Saitama",
+      "country": "Japan",
+      "capacity": 63700
+    },
+    {
+      "id": "shizuoka",
+      "name": "Shizuoka Stadium ECOPA",
+      "location": "Fukuroi",
+      "country": "Japan",
+      "capacity": 51300
+    },
+    {
+      "id": "nagai",
+      "name": "Nagai Stadium",
+      "location": "Osaka",
+      "country": "Japan",
+      "capacity": 47145
+    },
+    {
+      "id": "miyagi",
+      "name": "Miyagi Stadium",
+      "location": "Rifu",
+      "country": "Japan",
+      "capacity": 49000
+    },
+    {
+      "id": "nippon-dome",
+      "name": "Tokyo Dome",
+      "location": "Tokyo",
+      "country": "Japan",
+      "capacity": 55000
+    },
+    {
+      "id": "new-national",
+      "name": "Japan National Stadium",
+      "location": "Tokyo",
+      "country": "Japan",
+      "capacity": 80000
+    },
+    {
+      "id": "kobe-universal",
+      "name": "Noevir Stadium Kobe",
+      "location": "Kobe",
+      "country": "Japan",
+      "capacity": 30134
+    },
+    {
+      "id": "big-swan",
+      "name": "Big Swan Stadium",
+      "location": "Niigata",
+      "country": "Japan",
+      "capacity": 42300
+    },
+    {
+      "id": "kashima",
+      "name": "Kashima Soccer Stadium",
+      "location": "Kashima",
+      "country": "Japan",
+      "capacity": 40728
+    },
+    {
+      "id": "sapporo-dome",
+      "name": "Sapporo Dome",
+      "location": "Sapporo",
+      "country": "Japan",
+      "capacity": 41000
+    },
+    {
+      "id": "bird-stadium",
+      "name": "Tottori Bank Bird Stadium",
+      "location": "Tottori",
+      "country": "Japan",
+      "capacity": 16000
+    },
+    {
+      "id": "oita",
+      "name": "Showa Denko Dome Oita",
+      "location": "Oita",
+      "country": "Japan",
+      "capacity": 40000
+    },
+    {
+      "id": "fifa-world-cup-stadium",
+      "name": "FIFA World Cup Stadium",
+      "location": "Seoul",
+      "country": "South Korea",
+      "capacity": 66704
+    },
+    {
+      "id": "beijing-national",
+      "name": "Beijing National Stadium (Bird's Nest)",
+      "location": "Beijing",
+      "country": "China",
+      "capacity": 80000
+    },
+    {
+      "id": "guangzhou",
+      "name": "Guangzhou Evergrande Stadium",
+      "location": "Guangzhou",
+      "country": "China",
+      "capacity": 58000
+    },
+    {
+      "id": "shanghai",
+      "name": "Shanghai Stadium",
+      "location": "Shanghai",
+      "country": "China",
+      "capacity": 72000
+    },
+    {
+      "id": "workers-beijing",
+      "name": "Workers' Stadium",
+      "location": "Beijing",
+      "country": "China",
+      "capacity": 68000
+    },
+    {
+      "id": "tianhe",
+      "name": "Tianhe Stadium",
+      "location": "Guangzhou",
+      "country": "China",
+      "capacity": 56000
+    },
+    {
+      "id": "nankai",
+      "name": "Nankai Stadium",
+      "location": "Tianjin",
+      "country": "China",
+      "capacity": 60000
+    },
+    {
+      "id": "shenzhen",
+      "name": "Shenzhen Bay Sports Center",
+      "location": "Shenzhen",
+      "country": "China",
+      "capacity": 40000
+    },
+    {
+      "id": "hukou",
+      "name": "Hukou Stadium",
+      "location": "Nanjing",
+      "country": "China",
+      "capacity": 60000
+    },
+    {
+      "id": "wuhan",
+      "name": "Wuhan Sports Center",
+      "location": "Wuhan",
+      "country": "China",
+      "capacity": 60000
+    },
+    {
+      "id": "chengdu",
+      "name": "Chengdu Longquanyi Stadium",
+      "location": "Chengdu",
+      "country": "China",
+      "capacity": 42000
+    },
+    {
+      "id": "hzhengzhou",
+      "name": "Hangzhou Olympic Sports Center",
+      "location": "Hangzhou",
+      "country": "China",
+      "capacity": 60000
+    },
+    {
+      "id": "salt-lake",
+      "name": "Salt Lake Stadium",
+      "location": "Kolkata",
+      "country": "India",
+      "capacity": 85000
+    },
+    {
+      "id": "jawaharlal-nehru-delhi",
+      "name": "Jawaharlal Nehru Stadium",
+      "location": "New Delhi",
+      "country": "India",
+      "capacity": 60000
+    },
+    {
+      "id": "narendra-modi",
+      "name": "Narendra Modi Stadium",
+      "location": "Ahmedabad",
+      "country": "India",
+      "capacity": 132000
+    },
+    {
+      "id": "dy-patil",
+      "name": "DY Patil Stadium",
+      "location": "Mumbai",
+      "country": "India",
+      "capacity": 55000
+    },
+    {
+      "id": "greenfield",
+      "name": "Greenfield International Stadium",
+      "location": "Thiruvananthapuram",
+      "country": "India",
+      "capacity": 50000
+    },
+    {
+      "id": "indira-gandhi",
+      "name": "Indira Gandhi Athletic Stadium",
+      "location": "Guwahati",
+      "country": "India",
+      "capacity": 38000
+    },
+    {
+      "id": "shiv-chhatrapati",
+      "name": "Shiv Chhatrapati Sports Complex",
+      "location": "Pune",
+      "country": "India",
+      "capacity": 12000
+    },
+    {
+      "id": "yuva-bharati",
+      "name": "Yuva Bharati Krirangan",
+      "location": "Kolkata",
+      "country": "India",
+      "capacity": 85000
+    },
+    {
+      "id": "kozhikode",
+      "name": "EMS Stadium",
+      "location": "Kozhikode",
+      "country": "India",
+      "capacity": 50000
+    },
+    {
+      "id": "fatorda",
+      "name": "Fatorda Stadium",
+      "location": "Goa",
+      "country": "India",
+      "capacity": 19000
+    },
+    {
+      "id": "sree-kanteerava",
+      "name": "Sree Kanteerava Stadium",
+      "location": "Bengaluru",
+      "country": "India",
+      "capacity": 25000
+    },
+    {
+      "id": "bukit-jalil",
+      "name": "Bukit Jalil National Stadium",
+      "location": "Kuala Lumpur",
+      "country": "Malaysia",
+      "capacity": 87411
+    },
+    {
+      "id": "shah-alam",
+      "name": "Shah Alam Stadium",
+      "location": "Shah Alam",
+      "country": "Malaysia",
+      "capacity": 80372
+    },
+    {
+      "id": "gelora-bung-karno",
+      "name": "Gelora Bung Karno Stadium",
+      "location": "Jakarta",
+      "country": "Indonesia",
+      "capacity": 77793
+    },
+    {
+      "id": "pakansari",
+      "name": "Pakansari Stadium",
+      "location": "Bogor",
+      "country": "Indonesia",
+      "capacity": 30000
+    },
+    {
+      "id": "raja-mandala",
+      "name": "Raja Mandala Stadium",
+      "location": "Karawang",
+      "country": "Indonesia",
+      "capacity": 30000
+    },
+    {
+      "id": "mohamed-bouhaz",
+      "name": "Mohamed Bouhaz Stadium",
+      "location": "Port Said",
+      "country": "Egypt",
+      "capacity": 18000
+    },
+    {
+      "id": "borg-el-arab",
+      "name": "Borg El Arab Stadium",
+      "location": "Alexandria",
+      "country": "Egypt",
+      "capacity": 86000
+    },
+    {
+      "id": "cairo",
+      "name": "Cairo International Stadium",
+      "location": "Cairo",
+      "country": "Egypt",
+      "capacity": 75200
+    },
+    {
+      "id": "al-salam",
+      "name": "Al Salam Stadium",
+      "location": "Cairo",
+      "country": "Egypt",
+      "capacity": 30000
+    },
+    {
+      "id": "al-ahly",
+      "name": "Al Ahly Stadium",
+      "location": "Cairo",
+      "country": "Egypt",
+      "capacity": 30000
+    },
+    {
+      "id": "fifa-world-cup-qatar",
+      "name": "FIFA World Cup Stadium",
+      "location": "Doha",
+      "country": "Qatar",
+      "capacity": 88866
+    },
+    {
+      "id": "fisht-sochi",
+      "name": "Fisht Olympic Stadium",
+      "location": "Sochi",
+      "country": "Russia",
+      "capacity": 47659
+    },
+    {
+      "id": "dslbe",
+      "name": "Dubai Sports City Stadium",
+      "location": "Dubai",
+      "country": "UAE",
+      "capacity": 25000
+    },
+    {
+      "id": "zayed",
+      "name": "Zayed Sports City Stadium",
+      "location": "Abu Dhabi",
+      "country": "UAE",
+      "capacity": 43000
+    },
+    {
+      "id": "al-maktoum",
+      "name": "Al Maktoum Stadium",
+      "location": "Dubai",
+      "country": "UAE",
+      "capacity": 15000
+    },
+    {
+      "id": "hazza-bin-zayed",
+      "name": "Hazza bin Zayed Stadium",
+      "location": "Al Ain",
+      "country": "UAE",
+      "capacity": 22965
+    },
+    {
+      "id": "loftus-versfeld",
+      "name": "Loftus Versfeld Stadium",
+      "location": "Pretoria",
+      "country": "South Africa",
+      "capacity": 51762
+    },
+    {
+      "id": "ellis-park",
+      "name": "Ellis Park Stadium",
+      "location": "Johannesburg",
+      "country": "South Africa",
+      "capacity": 62567
+    },
+    {
+      "id": "soccer-city",
+      "name": "FNB Stadium (Soccer City)",
+      "location": "Johannesburg",
+      "country": "South Africa",
+      "capacity": 94736
+    },
+    {
+      "id": "cape-town",
+      "name": "Cape Town Stadium",
+      "location": "Cape Town",
+      "country": "South Africa",
+      "capacity": 55000
+    },
+    {
+      "id": "moses-mabhida",
+      "name": "Moses Mabhida Stadium",
+      "location": "Durban",
+      "country": "South Africa",
+      "capacity": 56000
+    },
+    {
+      "id": "nelson-mandela",
+      "name": "Nelson Mandela Bay Stadium",
+      "location": "Gqeberha",
+      "country": "South Africa",
+      "capacity": 46000
+    },
+    {
+      "id": "mbombela",
+      "name": "Mbombela Stadium",
+      "location": "Nelspruit",
+      "country": "South Africa",
+      "capacity": 43589
+    },
+    {
+      "id": "peter-mokaba",
+      "name": "Peter Mokaba Stadium",
+      "location": "Polokwane",
+      "country": "South Africa",
+      "capacity": 41733
+    },
+    {
+      "id": "royal-bafokeng",
+      "name": "Royal Bafokeng Stadium",
+      "location": "Rustenburg",
+      "country": "South Africa",
+      "capacity": 42676
+    },
+    {
+      "id": "free-state",
+      "name": "Free State Stadium",
+      "location": "Bloemfontein",
+      "country": "South Africa",
+      "capacity": 40911
+    },
+    {
+      "id": "al-jazira",
+      "name": "Al Jazira Stadium",
+      "location": "Abu Dhabi",
+      "country": "UAE",
+      "capacity": 15500
+    },
+    {
+      "id": "mohammad-bin-zayed",
+      "name": "Mohammad Bin Zayed Stadium",
+      "location": "Abu Dhabi",
+      "country": "UAE",
+      "capacity": 15000
+    },
+    {
+      "id": "11-june-stadium",
+      "name": "11 June Stadium",
+      "location": "Tripoli",
+      "country": "Libya",
+      "capacity": 65000
+    },
+    {
+      "id": "aami-park",
+      "name": "AAMI Park",
+      "location": "Melbourne",
+      "country": "Australia",
+      "capacity": 30050
+    },
+    {
+      "id": "aami-stadium",
+      "name": "AAMI Stadium",
+      "location": "Adelaide",
+      "country": "Australia",
+      "capacity": 51515
+    },
+    {
+      "id": "absa-stadium",
+      "name": "ABSA Stadium",
+      "location": "Durban",
+      "country": "South Africa",
+      "capacity": 55000
+    },
+    {
+      "id": "abuja-stadium",
+      "name": "Abuja Stadium",
+      "location": "Abuja",
+      "country": "Nigeria",
+      "capacity": 60000
+    },
+    {
+      "id": "aca-vdca-stadium",
+      "name": "ACA-VDCA Stadium",
+      "location": "Visakhapatnam",
+      "country": "India",
+      "capacity": 46000
+    },
+    {
+      "id": "ademar-da-costa-carvalho",
+      "name": "Ademar da Costa Carvalho",
+      "location": "Recife",
+      "country": "Brazil",
+      "capacity": 30520
+    },
+    {
+      "id": "aggie-memorial-stadium",
+      "name": "Aggie Memorial Stadium",
+      "location": "Las Cruces",
+      "country": "United States",
+      "capacity": 30343
+    },
+    {
+      "id": "ajinamoto-stadium",
+      "name": "Ajinamoto Stadium",
+      "location": "Tokyo",
+      "country": "Japan",
+      "capacity": 50000
+    },
+    {
+      "id": "al-shaab-stadium",
+      "name": "Al Shaab Stadium",
+      "location": "Baghdad",
+      "country": "Iraq",
+      "capacity": 35000
+    },
+    {
+      "id": "alamodome",
+      "name": "Alamodome",
+      "location": "San Antonio",
+      "country": "United States",
+      "capacity": 65000
+    },
+    {
+      "id": "alberto-j-armando",
+      "name": "Alberto J. Armando",
+      "location": "Buenos Aires",
+      "country": "Argentina",
+      "capacity": 57446
+    },
+    {
+      "id": "alberto-tavares-silva",
+      "name": "Alberto Tavares Silva",
+      "location": "Teresina",
+      "country": "Brazil",
+      "capacity": 44200
+    },
+    {
+      "id": "alejandro-villanueva",
+      "name": "Alejandro Villanueva",
+      "location": "Lima",
+      "country": "Peru",
+      "capacity": 35000
+    },
+    {
+      "id": "aleppo-intl-stadium",
+      "name": "Aleppo Int'l Stadium",
+      "location": "Aleppo",
+      "country": "Syria",
+      "capacity": 75000
+    },
+    {
+      "id": "aloha-stadium",
+      "name": "Aloha Stadium",
+      "location": "Honolulu",
+      "country": "United States",
+      "capacity": 50000
+    },
+    {
+      "id": "alumni-stadium",
+      "name": "Alumni Stadium",
+      "location": "Boston",
+      "country": "United States",
+      "capacity": 44500
+    },
+    {
+      "id": "ami-stadium",
+      "name": "AMI Stadium",
+      "location": "Christchurch",
+      "country": "New Zealand",
+      "capacity": 38628
+    },
+    {
+      "id": "amon-carter-stadium",
+      "name": "Amon Carter Stadium",
+      "location": "Fort Worth",
+      "country": "United States",
+      "capacity": 45000
+    },
+    {
+      "id": "amsterdam-arena",
+      "name": "Amsterdam ArenA",
+      "location": "Amsterdam",
+      "country": "Netherlands",
+      "capacity": 52960
+    },
+    {
+      "id": "angel-stadium",
+      "name": "Angel Stadium",
+      "location": "Anaheim",
+      "country": "United States",
+      "capacity": 45050
+    },
+    {
+      "id": "ansan-wa-stadium",
+      "name": "Ansan Wa~ Stadium",
+      "location": "Ansan",
+      "country": "South Korea",
+      "capacity": 35000
+    },
+    {
+      "id": "antonio-vespucio-liberti",
+      "name": "Antonio Vespucio Liberti",
+      "location": "Buenos Aires",
+      "country": "Argentina",
+      "capacity": 66449
+    },
+    {
+      "id": "anz-stadium-aus",
+      "name": "ANZ Stadium",
+      "location": "Sydney",
+      "country": "Australia",
+      "capacity": 83500
+    },
+    {
+      "id": "apogee-stadium",
+      "name": "Apogee Stadium",
+      "location": "Denton",
+      "country": "United States",
+      "capacity": 30850
+    },
+    {
+      "id": "arena-barueri",
+      "name": "Arena Barueri",
+      "location": "Barueri",
+      "country": "Brazil",
+      "capacity": 35000
+    },
+    {
+      "id": "arena-do-gramio",
+      "name": "Arena do GrÃªmio",
+      "location": "Porto Alegre",
+      "country": "Brazil",
+      "capacity": 60540
+    },
+    {
+      "id": "arena-lviv",
+      "name": "Arena Lviv",
+      "location": "Lviv",
+      "country": "Ukraine",
+      "capacity": 34915
+    },
+    {
+      "id": "arizona-stadium",
+      "name": "Arizona Stadium",
+      "location": "Tucson",
+      "country": "United States",
+      "capacity": 56002
+    },
+    {
+      "id": "asim-ferhatovic-hase",
+      "name": "Asim Ferhatovic Hase",
+      "location": "Sarajevo",
+      "country": "Bosnia",
+      "capacity": 34630
+    },
+    {
+      "id": "att-park",
+      "name": "AT&T Park",
+      "location": "San Francisco",
+      "country": "United States",
+      "capacity": 41663
+    },
+    {
+      "id": "atatark-olimpiyat-stadi",
+      "name": "AtatÃ¼rk Olimpiyat Stadi",
+      "location": "Istanbul",
+      "country": "Turkey",
+      "capacity": 76092
+    },
+    {
+      "id": "athens-olympic-stadium",
+      "name": "Athens Olympic Stadium",
+      "location": "Athens",
+      "country": "Greece",
+      "capacity": 71030
+    },
+    {
+      "id": "autzen-stadium",
+      "name": "Autzen Stadium",
+      "location": "Eugene",
+      "country": "United States",
+      "capacity": 53800
+    },
+    {
+      "id": "aviva-stadium",
+      "name": "Aviva Stadium",
+      "location": "Dublin",
+      "country": "Ireland",
+      "capacity": 50000
+    },
+    {
+      "id": "azadi-stadium",
+      "name": "Azadi Stadium",
+      "location": "Tehran",
+      "country": "Iran",
+      "capacity": 84412
+    },
+    {
+      "id": "b-snyder-family-stadium",
+      "name": "B. Snyder Family Stadium",
+      "location": "Manhattan",
+      "country": "United States",
+      "capacity": 50300
+    },
+    {
+      "id": "baba-yara-stadium",
+      "name": "Baba Yara Stadium",
+      "location": "Kumasi",
+      "country": "Ghana",
+      "capacity": 40528
+    },
+    {
+      "id": "bangabandhu-stadium",
+      "name": "Bangabandhu Stadium",
+      "location": "Dhaka",
+      "country": "Bangladesh",
+      "capacity": 36000
+    },
+    {
+      "id": "bank-of-america-stadium",
+      "name": "Bank of America Stadium",
+      "location": "Charlotte",
+      "country": "United States",
+      "capacity": 73248
+    },
+    {
+      "id": "baoan-stadium",
+      "name": "Bao'an Stadium",
+      "location": "Shenzhen",
+      "country": "China",
+      "capacity": 40000
+    },
+    {
+      "id": "bayarena",
+      "name": "BayArena",
+      "location": "Leverkusen",
+      "country": "Germany",
+      "capacity": 30210
+    },
+    {
+      "id": "bc-place-stadium",
+      "name": "BC Place Stadium",
+      "location": "Vancouver",
+      "country": "Canada",
+      "capacity": 52000
+    },
+    {
+      "id": "beijing-national-stadium",
+      "name": "Beijing National Stadium",
+      "location": "Beijing",
+      "country": "China",
+      "capacity": 80000
+    },
+    {
+      "id": "ben-hill-griffin-stadium",
+      "name": "Ben Hill Griffin Stadium",
+      "location": "Gainesville",
+      "country": "United States",
+      "capacity": 88548
+    },
+    {
+      "id": "besiktas-inana-stadi",
+      "name": "Besiktas InÃ¶nÃ¼ Stadi",
+      "location": "Istanbul",
+      "country": "Turkey",
+      "capacity": 32086
+    },
+    {
+      "id": "bh-networks-stadium",
+      "name": "BH Networks Stadium",
+      "location": "Orlando",
+      "country": "United States",
+      "capacity": 45301
+    },
+    {
+      "id": "big-arch-stadium",
+      "name": "Big Arch Stadium",
+      "location": "Hiroshima",
+      "country": "Japan",
+      "capacity": 45000
+    },
+    {
+      "id": "big-crown-stadium",
+      "name": "Big Crown Stadium",
+      "location": "Ulsan",
+      "country": "South Korea",
+      "capacity": 43550
+    },
+    {
+      "id": "bobby-dodd-at-grant-field",
+      "name": "Bobby Dodd at Grant Field",
+      "location": "Atlanta",
+      "country": "United States",
+      "capacity": 55000
+    },
+    {
+      "id": "boleyn-ground",
+      "name": "Boleyn Ground",
+      "location": "London",
+      "country": "England",
+      "capacity": 35056
+    },
+    {
+      "id": "boone-pickens-stadium",
+      "name": "Boone Pickens Stadium",
+      "location": "Stillwater",
+      "country": "United States",
+      "capacity": 60000
+    },
+    {
+      "id": "boris-paichadze-stadium",
+      "name": "Boris Paichadze Stadium",
+      "location": "Tbilisi",
+      "country": "Georgia",
+      "capacity": 55000
+    },
+    {
+      "id": "botchan-stadium",
+      "name": "Botchan Stadium",
+      "location": "Matsuyama",
+      "country": "Japan",
+      "capacity": 30136
+    },
+    {
+      "id": "bramall-lane",
+      "name": "Bramall Lane",
+      "location": "Sheffield",
+      "country": "England",
+      "capacity": 33500
+    },
+    {
+      "id": "breffni-park",
+      "name": "Breffni Park",
+      "location": "Cavan",
+      "country": "Ireland",
+      "capacity": 32000
+    },
+    {
+      "id": "bronco-stadium",
+      "name": "Bronco Stadium",
+      "location": "Boise",
+      "country": "United States",
+      "capacity": 37000
+    },
+    {
+      "id": "browns-stadium",
+      "name": "Browns Stadium",
+      "location": "Cleveland",
+      "country": "United States",
+      "capacity": 73200
+    },
+    {
+      "id": "bryant-denny-stadium",
+      "name": "Bryant Denny Stadium",
+      "location": "Tuscaloosa",
+      "country": "United States",
+      "capacity": 101821
+    },
+    {
+      "id": "bukit-jalil-stadium",
+      "name": "Bukit Jalil Stadium",
+      "location": "Kuala Lumpur",
+      "country": "Malaysia",
+      "capacity": 100200
+    },
+    {
+      "id": "bulldog-stadium",
+      "name": "Bulldog Stadium",
+      "location": "Fresno",
+      "country": "United States",
+      "capacity": 41031
+    },
+    {
+      "id": "bung-karno-stadium",
+      "name": "Bung Karno Stadium",
+      "location": "Jakarta",
+      "country": "Indonesia",
+      "capacity": 88083
+    },
+    {
+      "id": "bung-tomo-stadium",
+      "name": "Bung Tomo Stadium",
+      "location": "Surabaya",
+      "country": "Indonesia",
+      "capacity": 50000
+    },
+    {
+      "id": "byrd-stadium",
+      "name": "Byrd Stadium",
+      "location": "College Park",
+      "country": "United States",
+      "capacity": 48055
+    },
+    {
+      "id": "cairo-intl-stadium",
+      "name": "Cairo Int'l Stadium",
+      "location": "Cairo",
+      "country": "Egypt",
+      "capacity": 74100
+    },
+    {
+      "id": "cajun-field",
+      "name": "Cajun Field",
+      "location": "Lafayette",
+      "country": "United States",
+      "capacity": 31000
+    },
+    {
+      "id": "camille-chamoun-stadium",
+      "name": "Camille Chamoun Stadium",
+      "location": "Beirut",
+      "country": "Lebanon",
+      "capacity": 57600
+    },
+    {
+      "id": "camp-randall-stadium",
+      "name": "Camp Randall Stadium",
+      "location": "Madison",
+      "country": "United States",
+      "capacity": 81321
+    },
+    {
+      "id": "candlestick-park",
+      "name": "Candlestick Park",
+      "location": "San Francisco",
+      "country": "United States",
+      "capacity": 69734
+    },
+    {
+      "id": "carrier-dome",
+      "name": "Carrier Dome",
+      "location": "Syracuse",
+      "country": "United States",
+      "capacity": 32000
+    },
+    {
+      "id": "carter-finley-stadium",
+      "name": "Carter Finley Stadium",
+      "location": "Raleigh",
+      "country": "United States",
+      "capacity": 57082
+    },
+    {
+      "id": "casement-park",
+      "name": "Casement Park",
+      "location": "Belfast",
+      "country": "England",
+      "capacity": 32500
+    },
+    {
+      "id": "ccm-kirumba-stadium",
+      "name": "CCM Kirumba Stadium",
+      "location": "Mwanza",
+      "country": "Tanzania",
+      "capacity": 35000
+    },
+    {
+      "id": "celtic-park",
+      "name": "Celtic Park",
+      "location": "Glasgow",
+      "country": "England",
+      "capacity": 60506
+    },
+    {
+      "id": "century-lotus-stadium",
+      "name": "Century Lotus Stadium",
+      "location": "Foshan",
+      "country": "China",
+      "capacity": 36686
+    },
+    {
+      "id": "centurylink-field",
+      "name": "CenturyLink Field",
+      "location": "Seattle",
+      "country": "United States",
+      "capacity": 67000
+    },
+    {
+      "id": "changchun-city-stadium",
+      "name": "Changchun City Stadium",
+      "location": "Changchun",
+      "country": "China",
+      "capacity": 38000
+    },
+    {
+      "id": "chase-field",
+      "name": "Chase Field",
+      "location": "Phoenix",
+      "country": "United States",
+      "capacity": 49033
+    },
+    {
+      "id": "chengdu-sports-center",
+      "name": "Chengdu Sports Center",
+      "location": "Chengdu",
+      "country": "China",
+      "capacity": 42000
+    },
+    {
+      "id": "chinnaswamy-stadium",
+      "name": "Chinnaswamy Stadium",
+      "location": "Bangalore",
+      "country": "India",
+      "capacity": 40000
+    },
+    {
+      "id": "cidade-de-coimbra",
+      "name": "Cidade de Coimbra",
+      "location": "Coimbra",
+      "country": "Portugal",
+      "capacity": 30154
+    },
+    {
+      "id": "citi-field",
+      "name": "Citi Field",
+      "location": "New York",
+      "country": "United States",
+      "capacity": 41922
+    },
+    {
+      "id": "citizens-bank-park",
+      "name": "Citizens Bank Park",
+      "location": "Philadelphia",
+      "country": "United States",
+      "capacity": 43500
+    },
+    {
+      "id": "city-of-mster-stadium",
+      "name": "City of M'ster Stadium",
+      "location": "Manchester",
+      "country": "England",
+      "capacity": 48000
+    },
+    {
+      "id": "ciudad-de-vicente-lapez",
+      "name": "Ciudad de Vicente LÃ³pez",
+      "location": "Buenos Aires",
+      "country": "Argentina",
+      "capacity": 31000
+    },
+    {
+      "id": "cluj-arena",
+      "name": "Cluj Arena",
+      "location": "Cluj-napoca",
+      "country": "ROM",
+      "capacity": 30335
+    },
+    {
+      "id": "coca-cola-park",
+      "name": "Coca-Cola Park",
+      "location": "Johannesburg",
+      "country": "South Africa",
+      "capacity": 62567
+    },
+    {
+      "id": "coface-arena",
+      "name": "Coface Arena",
+      "location": "Mainz",
+      "country": "Germany",
+      "capacity": 34034
+    },
+    {
+      "id": "comerica-park",
+      "name": "Comerica Park",
+      "location": "Detroit",
+      "country": "United States",
+      "capacity": 41070
+    },
+    {
+      "id": "coors-field",
+      "name": "Coors Field",
+      "location": "Denver",
+      "country": "United States",
+      "capacity": 50449
+    },
+    {
+      "id": "cotton-bowl",
+      "name": "Cotton Bowl",
+      "location": "Dallas",
+      "country": "United States",
+      "capacity": 92200
+    },
+    {
+      "id": "cowboys-stadium",
+      "name": "Cowboys Stadium",
+      "location": "Arlington",
+      "country": "United States",
+      "capacity": 80000
+    },
+    {
+      "id": "croke-park",
+      "name": "Croke Park",
+      "location": "Dublin",
+      "country": "Ireland",
+      "capacity": 82300
+    },
+    {
+      "id": "datianwan-stadium",
+      "name": "Datianwan Stadium",
+      "location": "Chongqing",
+      "country": "China",
+      "capacity": 32000
+    },
+    {
+      "id": "davis-wade-stadium",
+      "name": "Davis Wade Stadium",
+      "location": "Starkville",
+      "country": "United States",
+      "capacity": 55082
+    },
+    {
+      "id": "dinamo-stadion",
+      "name": "Dinamo Stadion",
+      "location": "Moscow",
+      "country": "Russia",
+      "capacity": 36540
+    },
+    {
+      "id": "dix-stadium",
+      "name": "Dix Stadium",
+      "location": "Kent",
+      "country": "United States",
+      "capacity": 30520
+    },
+    {
+      "id": "dkr-texas-memorial-stadium",
+      "name": "DKR-Texas Memorial Stadium",
+      "location": "Austin",
+      "country": "United States",
+      "capacity": 100119
+    },
+    {
+      "id": "doak-campbell-stadium",
+      "name": "Doak Campbell Stadium",
+      "location": "Tallahassee",
+      "country": "United States",
+      "capacity": 82300
+    },
+    {
+      "id": "dodger-stadium",
+      "name": "Dodger Stadium",
+      "location": "Los Angeles",
+      "country": "United States",
+      "capacity": 56000
+    },
+    {
+      "id": "don-lean-kolbovski",
+      "name": "Don LeÃ³n Kolbovski",
+      "location": "Buenos Aires",
+      "country": "Argentina",
+      "capacity": 34000
+    },
+    {
+      "id": "donbass-arena",
+      "name": "Donbass Arena",
+      "location": "Donetsk",
+      "country": "Ukraine",
+      "capacity": 52518
+    },
+    {
+      "id": "dowdy-ficklen-stadium",
+      "name": "Dowdy Ficklen Stadium",
+      "location": "Greenville",
+      "country": "United States",
+      "capacity": 50000
+    },
+    {
+      "id": "doyt-l-perry-stadium",
+      "name": "Doyt L. Perry Stadium",
+      "location": "Bowling Green",
+      "country": "United States",
+      "capacity": 30599
+    },
+    {
+      "id": "dr-lisandro-de-la-torre",
+      "name": "Dr. Lisandro de la Torre",
+      "location": "Rosario",
+      "country": "Argentina",
+      "capacity": 41654
+    },
+    {
+      "id": "elland-road",
+      "name": "Elland Road",
+      "location": "Leeds",
+      "country": "England",
+      "capacity": 40204
+    },
+    {
+      "id": "elmo-serejo-farias",
+      "name": "Elmo Serejo Farias",
+      "location": "Taguatinga",
+      "country": "Brazil",
+      "capacity": 32000
+    },
+    {
+      "id": "estadio-11-de-novembro",
+      "name": "EstÃ¡dio 11 de Novembro",
+      "location": "Luanda",
+      "country": "Angola",
+      "capacity": 50000
+    },
+    {
+      "id": "estadio-algarve",
+      "name": "EstÃ¡dio Algarve",
+      "location": "Faro",
+      "country": "Portugal",
+      "capacity": 30305
+    },
+    {
+      "id": "estadio-alvalade-xxi",
+      "name": "EstÃ¡dio Alvalade XXI",
+      "location": "Lisbon",
+      "country": "Portugal",
+      "capacity": 50300
+    },
+    {
+      "id": "estadio-balaidos",
+      "name": "Estadio Balaidos",
+      "location": "Vigo",
+      "country": "Spain",
+      "capacity": 31800
+    },
+    {
+      "id": "estadio-banco-pichincha",
+      "name": "Estadio Banco Pichincha",
+      "location": "Guayaquil",
+      "country": "Ecuador",
+      "capacity": 75000
+    },
+    {
+      "id": "estadio-benito-villamaran",
+      "name": "Estadio Benito VillamarÃ­n",
+      "location": "Sevilla",
+      "country": "Spain",
+      "capacity": 56432
+    },
+    {
+      "id": "estadio-brinco-de-ouro",
+      "name": "EstÃ¡dio Brinco de Ouro",
+      "location": "Campinas",
+      "country": "Brazil",
+      "capacity": 32453
+    },
+    {
+      "id": "estadio-caliente",
+      "name": "Estadio Caliente",
+      "location": "Tijuana",
+      "country": "Mexico",
+      "capacity": 33333
+    },
+    {
+      "id": "estadio-casa-blanca",
+      "name": "Estadio Casa Blanca",
+      "location": "Quito",
+      "country": "Ecuador",
+      "capacity": 42000
+    },
+    {
+      "id": "estadio-chacarita-juniors",
+      "name": "Estadio Chacarita Juniors",
+      "location": "Buenos Aires",
+      "country": "Argentina",
+      "capacity": 35000
+    },
+    {
+      "id": "estadio-ciudad-de-la-plata",
+      "name": "Estadio Ciudad de La Plata",
+      "location": "La Plata",
+      "country": "Argentina",
+      "capacity": 53000
+    },
+    {
+      "id": "estadio-couto-pereira",
+      "name": "EstÃ¡dio Couto Pereira",
+      "location": "Curitiba",
+      "country": "Brazil",
+      "capacity": 37182
+    },
+    {
+      "id": "estadio-cuauhtamoc",
+      "name": "Estadio CuauhtÃ©moc",
+      "location": "Puebla",
+      "country": "Mexico",
+      "capacity": 42649
+    },
+    {
+      "id": "estadio-cuscatlan",
+      "name": "Estadio CuscatlÃ¡n",
+      "location": "San Salvador",
+      "country": "El Salvador",
+      "capacity": 45925
+    },
+    {
+      "id": "estadio-da-cidadela",
+      "name": "Estadio da Cidadela",
+      "location": "Luanda",
+      "country": "Angola",
+      "capacity": 40000
+    },
+    {
+      "id": "estadio-da-luz-prt",
+      "name": "EstÃ¡dio da Luz",
+      "location": "Lisbon",
+      "country": "Portugal",
+      "capacity": 65647
+    },
+    {
+      "id": "estadio-da-machava",
+      "name": "EstÃ¡dio da Machava",
+      "location": "Maputo",
+      "country": "Mozambique",
+      "capacity": 60000
+    },
+    {
+      "id": "estadio-de-gran-canaria",
+      "name": "Estadio de Gran Canaria",
+      "location": "Las Palmas",
+      "country": "Spain",
+      "capacity": 31250
+    },
+    {
+      "id": "estadio-del-centenario",
+      "name": "Estadio del Centenario",
+      "location": "Resistencia",
+      "country": "Argentina",
+      "capacity": 35000
+    },
+    {
+      "id": "estadio-dennis-martinez",
+      "name": "Estadio Dennis Martinez",
+      "location": "Managua",
+      "country": "Nicaragua",
+      "capacity": 30100
+    },
+    {
+      "id": "estadio-deportivo-cala",
+      "name": "Estadio Deportivo CalÃ­",
+      "location": "Palmira",
+      "country": "Colombia",
+      "capacity": 54203
+    },
+    {
+      "id": "estadio-do-dragao-prt",
+      "name": "EstÃ¡dio do DragÃ£o",
+      "location": "Porto",
+      "country": "Portugal",
+      "capacity": 50399
+    },
+    {
+      "id": "estadio-do-maracana",
+      "name": "EstÃ¡dio do MaracanÃ£",
+      "location": "Rio De Janeiro",
+      "country": "Brazil",
+      "capacity": 78838
+    },
+    {
+      "id": "estadio-do-restelo",
+      "name": "EstÃ¡dio do Restelo",
+      "location": "Lisbon",
+      "country": "Portugal",
+      "capacity": 32500
+    },
+    {
+      "id": "estadio-do-zimpeto",
+      "name": "EstÃ¡dio do Zimpeto",
+      "location": "Maputo",
+      "country": "Mozambique",
+      "capacity": 42000
+    },
+    {
+      "id": "estadio-felix-capriles",
+      "name": "Estadio Felix Capriles",
+      "location": "Cochabamba",
+      "country": "Bolivia",
+      "capacity": 32000
+    },
+    {
+      "id": "estadio-florencio-sola",
+      "name": "Estadio Florencio SolÃ¡",
+      "location": "Buenos Aires",
+      "country": "Argentina",
+      "capacity": 33351
+    },
+    {
+      "id": "estadio-francisco-stadile",
+      "name": "EstÃ¡dio Francisco StÃ©dile",
+      "location": "Caxias Do Sul",
+      "country": "Brazil",
+      "capacity": 30822
+    },
+    {
+      "id": "estadio-hernando-siles",
+      "name": "Estadio Hernando Siles",
+      "location": "La Paz",
+      "country": "Bolivia",
+      "capacity": 42000
+    },
+    {
+      "id": "estadio-ja-anzoategui",
+      "name": "Estadio J.A. AnzoÃ¡tegui",
+      "location": "Puerto La Cruz",
+      "country": "Venezuela",
+      "capacity": 41000
+    },
+    {
+      "id": "estadio-jc-zerillo",
+      "name": "Estadio J.C. Zerillo",
+      "location": "La Plata",
+      "country": "Argentina",
+      "capacity": 33500
+    },
+    {
+      "id": "estadio-je-romero",
+      "name": "Estadio J.E. Romero",
+      "location": "Maracaibo",
+      "country": "Venezuela",
+      "capacity": 40800
+    },
+    {
+      "id": "estadio-jacy-scaff",
+      "name": "EstÃ¡dio Jacy Scaff",
+      "location": "Londrina",
+      "country": "Brazil",
+      "capacity": 36000
+    },
+    {
+      "id": "estadio-jalisco",
+      "name": "Estadio Jalisco",
+      "location": "Guadalajara",
+      "country": "Mexico",
+      "capacity": 63163
+    },
+    {
+      "id": "estadio-josa-amalfitani",
+      "name": "Estadio JosÃ© Amalfitani",
+      "location": "Buenos Aires",
+      "country": "Argentina",
+      "capacity": 49747
+    },
+    {
+      "id": "estadio-la-cartuja",
+      "name": "Estadio La Cartuja",
+      "location": "Sevilla",
+      "country": "Spain",
+      "capacity": 72000
+    },
+    {
+      "id": "estadio-la-romareda",
+      "name": "Estadio La Romareda",
+      "location": "Zaragoza",
+      "country": "Spain",
+      "capacity": 34700
+    },
+    {
+      "id": "estadio-latinoamericano",
+      "name": "Estadio Latinoamericano",
+      "location": "La Habana",
+      "country": "Cuba",
+      "capacity": 55000
+    },
+    {
+      "id": "estadio-m-aleman-valdas",
+      "name": "Estadio M. AlemÃ¡n ValdÃ©s",
+      "location": "Celaya",
+      "country": "Mexico",
+      "capacity": 32300
+    },
+    {
+      "id": "estadio-machado",
+      "name": "EstÃ¡dio Machado",
+      "location": "Natal",
+      "country": "Brazil",
+      "capacity": 42000
+    },
+    {
+      "id": "estadio-magalhaes-pinto",
+      "name": "EstÃ¡dio MagalhÃ£es Pinto",
+      "location": "Belo Horizonte",
+      "country": "Brazil",
+      "capacity": 62170
+    },
+    {
+      "id": "estadio-manoel-barradas",
+      "name": "EstÃ¡dio Manoel Barradas",
+      "location": "Salvador",
+      "country": "Brazil",
+      "capacity": 35632
+    },
+    {
+      "id": "estadio-mario-helanio",
+      "name": "EstÃ¡dio Mario HelÃªnio",
+      "location": "Juiz De Fora",
+      "country": "Brazil",
+      "capacity": 40000
+    },
+    {
+      "id": "estadio-mestalla",
+      "name": "Estadio Mestalla",
+      "location": "Valencia",
+      "country": "Spain",
+      "capacity": 53000
+    },
+    {
+      "id": "estadio-modelo-a-spencer",
+      "name": "Estadio Modelo A. Spencer",
+      "location": "Guayaquil",
+      "country": "Ecuador",
+      "capacity": 45000
+    },
+    {
+      "id": "estadio-monumental-u",
+      "name": "Estadio Monumental U",
+      "location": "Lima",
+      "country": "Peru",
+      "capacity": 80093
+    },
+    {
+      "id": "estadio-morelos",
+      "name": "Estadio Morelos",
+      "location": "Morelia",
+      "country": "Mexico",
+      "capacity": 38384
+    },
+    {
+      "id": "estadio-nacional",
+      "name": "EstÃ¡dio Nacional",
+      "location": "Lisbon",
+      "country": "Portugal",
+      "capacity": 39000
+    },
+    {
+      "id": "estadio-nueva-condomina",
+      "name": "Estadio Nueva Condomina",
+      "location": "Murcia",
+      "country": "Spain",
+      "capacity": 33045
+    },
+    {
+      "id": "estadio-nueva-espaaa",
+      "name": "Estadio Nueva EspaÃ±a",
+      "location": "Buenos Aires",
+      "country": "Argentina",
+      "capacity": 32500
+    },
+    {
+      "id": "estadio-o-amigao",
+      "name": "EstÃ¡dio O AmigÃ£o",
+      "location": "Campina Grande",
+      "country": "Brazil",
+      "capacity": 38000
+    },
+    {
+      "id": "estadio-omnilife",
+      "name": "Estadio Omnilife",
+      "location": "Zapopan",
+      "country": "Mexico",
+      "capacity": 45500
+    },
+    {
+      "id": "estadio-pasnamericano",
+      "name": "Estadio Pas_namericano",
+      "location": "La Habana",
+      "country": "Cuba",
+      "capacity": 34000
+    },
+    {
+      "id": "estadio-pedro-bidegaan",
+      "name": "Estadio Pedro BidegaÃ­n",
+      "location": "Buenos Aires",
+      "country": "Argentina",
+      "capacity": 42000
+    },
+    {
+      "id": "estadio-placido-castelo",
+      "name": "EstÃ¡dio PlÃ¡cido Castelo",
+      "location": "Fortaleza",
+      "country": "Brazil",
+      "capacity": 67037
+    },
+    {
+      "id": "estadio-roberto-santos",
+      "name": "EstÃ¡dio Roberto Santos",
+      "location": "Salvador",
+      "country": "Brazil",
+      "capacity": 32157
+    },
+    {
+      "id": "estadio-san-mamas",
+      "name": "Estadio San MamÃ©s",
+      "location": "Bilbao",
+      "country": "Spain",
+      "capacity": 39750
+    },
+    {
+      "id": "estadio-tecnologico",
+      "name": "Estadio Tecnologico",
+      "location": "Monterrey",
+      "country": "Mexico",
+      "capacity": 38622
+    },
+    {
+      "id": "estadio-vivaldo-lima",
+      "name": "EstÃ¡dio Vivaldo Lima",
+      "location": "Manaus",
+      "country": "Brazil",
+      "capacity": 43000
+    },
+    {
+      "id": "everbank-field",
+      "name": "EverBank Field",
+      "location": "Jacksonville",
+      "country": "United States",
+      "capacity": 76877
+    },
+    {
+      "id": "ewood-park",
+      "name": "Ewood Park",
+      "location": "Blackburn",
+      "country": "England",
+      "capacity": 31367
+    },
+    {
+      "id": "faurot-field",
+      "name": "Faurot Field",
+      "location": "Columbia",
+      "country": "United States",
+      "capacity": 62000
+    },
+    {
+      "id": "falix-houphouet-boigny",
+      "name": "FÃ©lix Houphouet-Boigny",
+      "location": "Abidjan",
+      "country": "Ivory Coast",
+      "capacity": 45000
+    },
+    {
+      "id": "fengtai-stadium",
+      "name": "Fengtai Stadium",
+      "location": "Beijing",
+      "country": "China",
+      "capacity": 31043
+    },
+    {
+      "id": "fenway-park",
+      "name": "Fenway Park",
+      "location": "Boston",
+      "country": "United States",
+      "capacity": 36108
+    },
+    {
+      "id": "feroz-shah-kotla",
+      "name": "Feroz Shah Kotla",
+      "location": "New Delhi",
+      "country": "India",
+      "capacity": 48000
+    },
+    {
+      "id": "fitzgerald-stadium",
+      "name": "Fitzgerald Stadium",
+      "location": "Killarney",
+      "country": "Ireland",
+      "capacity": 43000
+    },
+    {
+      "id": "florida-citrus-bowl",
+      "name": "Florida Citrus Bowl",
+      "location": "Orlando",
+      "country": "United States",
+      "capacity": 70188
+    },
+    {
+      "id": "floyd-casey-stadium",
+      "name": "Floyd Casey Stadium",
+      "location": "Waco",
+      "country": "United States",
+      "capacity": 50000
+    },
+    {
+      "id": "floyd-stadium",
+      "name": "Floyd Stadium",
+      "location": "Murfreesboro",
+      "country": "United States",
+      "capacity": 31788
+    },
+    {
+      "id": "folsom-field-stadium",
+      "name": "Folsom Field Stadium",
+      "location": "Boulder",
+      "country": "United States",
+      "capacity": 53750
+    },
+    {
+      "id": "ford-field",
+      "name": "Ford Field",
+      "location": "Detroit",
+      "country": "United States",
+      "capacity": 64500
+    },
+    {
+      "id": "forsyth-barr-stadium",
+      "name": "Forsyth Barr Stadium",
+      "location": "Dunedin",
+      "country": "New Zealand",
+      "capacity": 30500
+    },
+    {
+      "id": "franklin-field",
+      "name": "Franklin Field",
+      "location": "Philadelphia",
+      "country": "United States",
+      "capacity": 52593
+    },
+    {
+      "id": "fred-yager-stadium",
+      "name": "Fred Yager Stadium",
+      "location": "Oxford",
+      "country": "United States",
+      "capacity": 30012
+    },
+    {
+      "id": "fritz-walter-stadion",
+      "name": "Fritz Walter Stadion",
+      "location": "Kaiserslautern",
+      "country": "Germany",
+      "capacity": 48500
+    },
+    {
+      "id": "fukuoka-dome",
+      "name": "Fukuoka Dome",
+      "location": "Fukuoka",
+      "country": "Japan",
+      "capacity": 35695
+    },
+    {
+      "id": "gadaffi-hockey-stadium",
+      "name": "Gadaffi Hockey Stadium",
+      "location": "Lahore",
+      "country": "Pakistan",
+      "capacity": 45000
+    },
+    {
+      "id": "gaddafi-stadium",
+      "name": "Gaddafi Stadium",
+      "location": "Lahore",
+      "country": "Pakistan",
+      "capacity": 60000
+    },
+    {
+      "id": "gaelic-grounds",
+      "name": "Gaelic Grounds",
+      "location": "Limerick",
+      "country": "Ireland",
+      "capacity": 50000
+    },
+    {
+      "id": "gateway-stadium",
+      "name": "Gateway Stadium",
+      "location": "Abeokuta",
+      "country": "Nigeria",
+      "capacity": 35000
+    },
+    {
+      "id": "gaylord-family-stadium",
+      "name": "Gaylord Family Stadium",
+      "location": "Norman",
+      "country": "United States",
+      "capacity": 82112
+    },
+    {
+      "id": "gedebage-stadium",
+      "name": "Gedebage Stadium",
+      "location": "Bandung",
+      "country": "Indonesia",
+      "capacity": 72000
+    },
+    {
+      "id": "georgia-dome",
+      "name": "Georgia Dome",
+      "location": "Atlanta",
+      "country": "United States",
+      "capacity": 71149
+    },
+    {
+      "id": "gerald-j-ford-stadium",
+      "name": "Gerald J. Ford Stadium",
+      "location": "University Park",
+      "country": "United States",
+      "capacity": 32000
+    },
+    {
+      "id": "ghadir-stadium",
+      "name": "Ghadir Stadium",
+      "location": "Ahvaz",
+      "country": "Iran",
+      "capacity": 51000
+    },
+    {
+      "id": "glacksgas-stadion",
+      "name": "GlÃ¼cksgas Stadion",
+      "location": "Dresden",
+      "country": "Germany",
+      "capacity": 32066
+    },
+    {
+      "id": "goodison-park",
+      "name": "Goodison Park",
+      "location": "Liverpool",
+      "country": "England",
+      "capacity": 40200
+    },
+    {
+      "id": "grand-stade-de-marrakech",
+      "name": "Grand Stade de Marrakech",
+      "location": "Marrakech",
+      "country": "Morocco",
+      "capacity": 41356
+    },
+    {
+      "id": "grand-stade-de-tanger",
+      "name": "Grand Stade de Tanger",
+      "location": "Tanger",
+      "country": "Morocco",
+      "capacity": 45000
+    },
+    {
+      "id": "great-american-ball-park",
+      "name": "Great American Ball Park",
+      "location": "Cincinnati",
+      "country": "United States",
+      "capacity": 42059
+    },
+    {
+      "id": "grolsch-veste",
+      "name": "Grolsch Veste",
+      "location": "Enschede",
+      "country": "Netherlands",
+      "capacity": 30205
+    },
+    {
+      "id": "guangdong-stadium",
+      "name": "Guangdong Stadium",
+      "location": "Guangzhou",
+      "country": "China",
+      "capacity": 80012
+    },
+    {
+      "id": "hampden-park",
+      "name": "Hampden Park",
+      "location": "Glasgow",
+      "country": "England",
+      "capacity": 50670
+    },
+    {
+      "id": "harvard-stadium",
+      "name": "Harvard Stadium",
+      "location": "Boston",
+      "country": "United States",
+      "capacity": 30898
+    },
+    {
+      "id": "heinz-field",
+      "name": "Heinz Field",
+      "location": "Pittsburgh",
+      "country": "United States",
+      "capacity": 64450
+    },
+    {
+      "id": "hernan-ramirez-villegas",
+      "name": "Hernan Ramirez Villegas",
+      "location": "Pereira",
+      "country": "Colombia",
+      "capacity": 30313
+    },
+    {
+      "id": "hh-humphrey-metrodome",
+      "name": "HH Humphrey Metrodome",
+      "location": "Minneapolis",
+      "country": "United States",
+      "capacity": 45423
+    },
+    {
+      "id": "hillsborough",
+      "name": "Hillsborough",
+      "location": "Sheffield",
+      "country": "England",
+      "capacity": 39859
+    },
+    {
+      "id": "holmenkollen-stadion",
+      "name": "Holmenkollen Stadion",
+      "location": "Oslo",
+      "country": "Norway",
+      "capacity": 55000
+    },
+    {
+      "id": "hongkou-stadium",
+      "name": "Hongkou Stadium",
+      "location": "Shanghai",
+      "country": "China",
+      "capacity": 33060
+    },
+    {
+      "id": "hrazdan-stadium",
+      "name": "Hrazdan Stadium",
+      "location": "Yerevan",
+      "country": "Armenia",
+      "capacity": 58000
+    },
+    {
+      "id": "hunter-stadium",
+      "name": "Hunter Stadium",
+      "location": "Newcastle",
+      "country": "Australia",
+      "capacity": 33000
+    },
+    {
+      "id": "huskie-stadium",
+      "name": "Huskie Stadium",
+      "location": "De Kalb",
+      "country": "United States",
+      "capacity": 31000
+    },
+    {
+      "id": "husky-stadium",
+      "name": "Husky Stadium",
+      "location": "Seattle",
+      "country": "United States",
+      "capacity": 72500
+    },
+    {
+      "id": "hypo-arena",
+      "name": "Hypo-Arena",
+      "location": "Klagenfurt",
+      "country": "Austria",
+      "capacity": 32000
+    },
+    {
+      "id": "ibrox-stadium",
+      "name": "Ibrox Stadium",
+      "location": "Glasgow",
+      "country": "England",
+      "capacity": 51082
+    },
+    {
+      "id": "imtech-arena",
+      "name": "Imtech Arena",
+      "location": "Hamburg",
+      "country": "Germany",
+      "capacity": 57000
+    },
+    {
+      "id": "inca-garcilaso-de-la-vega",
+      "name": "Inca Garcilaso de la Vega",
+      "location": "Cusco",
+      "country": "Peru",
+      "capacity": 42056
+    },
+    {
+      "id": "independence-park",
+      "name": "Independence Park",
+      "location": "Kingston",
+      "country": "Jamaica",
+      "capacity": 35000
+    },
+    {
+      "id": "independence-stadium",
+      "name": "Independence Stadium",
+      "location": "Shreveport",
+      "country": "United States",
+      "capacity": 50832
+    },
+    {
+      "id": "indian-stadium",
+      "name": "Indian Stadium",
+      "location": "Jonesboro",
+      "country": "United States",
+      "capacity": 33410
+    },
+    {
+      "id": "izmir-atatark-stadi",
+      "name": "Izmir AtatÃ¼rk Stadi",
+      "location": "Izmir",
+      "country": "Turkey",
+      "capacity": 51295
+    },
+    {
+      "id": "jack-trice-stadium",
+      "name": "Jack Trice Stadium",
+      "location": "Ames",
+      "country": "United States",
+      "capacity": 45814
+    },
+    {
+      "id": "jalak-harupat-soreang",
+      "name": "Jalak Harupat Soreang",
+      "location": "Bandung",
+      "country": "Indonesia",
+      "capacity": 40000
+    },
+    {
+      "id": "jamsil-stadium",
+      "name": "Jamsil Stadium",
+      "location": "Seoul",
+      "country": "South Korea",
+      "capacity": 30265
+    },
+    {
+      "id": "jeque-zayed-stadium",
+      "name": "Jeque Zayed Stadium",
+      "location": "Abu Dhabi",
+      "country": "UAE",
+      "capacity": 49500
+    },
+    {
+      "id": "jiangwan-sports-centre",
+      "name": "Jiangwan Sports Centre",
+      "location": "Shanghai",
+      "country": "China",
+      "capacity": 40000
+    },
+    {
+      "id": "jingu-stadium",
+      "name": "Jingu Stadium",
+      "location": "Tokyo",
+      "country": "Japan",
+      "capacity": 37975
+    },
+    {
+      "id": "jinnah-sport-stadium",
+      "name": "Jinnah Sport Stadium",
+      "location": "Islamabad",
+      "country": "Pakistan",
+      "capacity": 48200
+    },
+    {
+      "id": "joan-c-edwards-stadium",
+      "name": "Joan C. Edwards Stadium",
+      "location": "Huntington",
+      "country": "United States",
+      "capacity": 38019
+    },
+    {
+      "id": "joe-aillet-stadium",
+      "name": "Joe Aillet Stadium",
+      "location": "Ruston",
+      "country": "United States",
+      "capacity": 30200
+    },
+    {
+      "id": "johannesburg-stadium",
+      "name": "Johannesburg Stadium",
+      "location": "Johannesburg",
+      "country": "South Africa",
+      "capacity": 37500
+    },
+    {
+      "id": "jones-att-stadium",
+      "name": "Jones AT&T Stadium",
+      "location": "Lubbock",
+      "country": "United States",
+      "capacity": 62500
+    },
+    {
+      "id": "jordan-hare-stadium",
+      "name": "Jordan Hare Stadium",
+      "location": "Auburn",
+      "country": "United States",
+      "capacity": 87451
+    },
+    {
+      "id": "josa-do-rego-maciel",
+      "name": "JosÃ© do Rego Maciel",
+      "location": "Recife",
+      "country": "Brazil",
+      "capacity": 66044
+    },
+    {
+      "id": "josa-luis-meiszner",
+      "name": "JosÃ© Luis Meiszner",
+      "location": "Quilmes",
+      "country": "Argentina",
+      "capacity": 33000
+    },
+    {
+      "id": "josa-maria-minella",
+      "name": "JosÃ© Maria Minella",
+      "location": "Mar Del Plata",
+      "country": "Argentina",
+      "capacity": 43542
+    },
+    {
+      "id": "josa-pinheiro-borda",
+      "name": "JosÃ© Pinheiro Borda",
+      "location": "Porto Alegre",
+      "country": "Brazil",
+      "capacity": 58306
+    },
+    {
+      "id": "juventus-arena",
+      "name": "Juventus Arena",
+      "location": "Torino",
+      "country": "Italy",
+      "capacity": 41254
+    },
+    {
+      "id": "kadir-has-stadi",
+      "name": "Kadir Has Stadi",
+      "location": "Kayseri",
+      "country": "Turkey",
+      "capacity": 32864
+    },
+    {
+      "id": "kamuzu-stadium",
+      "name": "Kamuzu Stadium",
+      "location": "Blantyre",
+      "country": "MWI",
+      "capacity": 50000
+    },
+    {
+      "id": "kaohsiung-stadium",
+      "name": "Kaohsiung Stadium",
+      "location": "Kaohsiung",
+      "country": "Taiwan",
+      "capacity": 40000
+    },
+    {
+      "id": "karachi-national-stadium",
+      "name": "Karachi National Stadium",
+      "location": "Karachi",
+      "country": "Pakistan",
+      "capacity": 34228
+    },
+    {
+      "id": "kauffman-stadium",
+      "name": "Kauffman Stadium",
+      "location": "Kansas City",
+      "country": "United States",
+      "capacity": 38177
+    },
+    {
+      "id": "kenan-stadium",
+      "name": "Kenan Stadium",
+      "location": "Chapel Hill",
+      "country": "United States",
+      "capacity": 60000
+    },
+    {
+      "id": "kensington-oval",
+      "name": "Kensington Oval",
+      "location": "Bridgetown",
+      "country": "BRB",
+      "capacity": 32000
+    },
+    {
+      "id": "khalifa-intl-stadium",
+      "name": "Khalifa Int'l Stadium",
+      "location": "Doha",
+      "country": "Qatar",
+      "capacity": 50000
+    },
+    {
+      "id": "khimik-stadion",
+      "name": "Khimik Stadion",
+      "location": "Kemerovo",
+      "country": "Russia",
+      "capacity": 33000
+    },
+    {
+      "id": "king-abdul-aziz",
+      "name": "King Abdul Aziz",
+      "location": "Makkah",
+      "country": "Saudi Arabia",
+      "capacity": 33500
+    },
+    {
+      "id": "king-fahd-intl-stadium",
+      "name": "King Fahd Int'l Stadium",
+      "location": "Riyadh",
+      "country": "Saudi Arabia",
+      "capacity": 67000
+    },
+    {
+      "id": "kinnick-stadium",
+      "name": "Kinnick Stadium",
+      "location": "Iowa City",
+      "country": "United States",
+      "capacity": 70397
+    },
+    {
+      "id": "koning-boudewijn-stadion",
+      "name": "Koning Boudewijn Stadion",
+      "location": "Brussels",
+      "country": "Belgium",
+      "capacity": 50024
+    },
+    {
+      "id": "koshien-stadium",
+      "name": "Koshien Stadium",
+      "location": "Nishinomiya",
+      "country": "Japan",
+      "capacity": 50454
+    },
+    {
+      "id": "kuban-stadion",
+      "name": "Kuban Stadion",
+      "location": "Krasnodar",
+      "country": "Russia",
+      "capacity": 31654
+    },
+    {
+      "id": "kyle-field",
+      "name": "Kyle Field",
+      "location": "College Station",
+      "country": "United States",
+      "capacity": 82600
+    },
+    {
+      "id": "la-memorial-coliseum",
+      "name": "L.A. Memorial Coliseum",
+      "location": "Los Angeles",
+      "country": "United States",
+      "capacity": 93607
+    },
+    {
+      "id": "lestadi-camp-nou",
+      "name": "L'Estadi (Camp Nou)",
+      "location": "Barcelona",
+      "country": "Spain",
+      "capacity": 99354
+    },
+    {
+      "id": "ladd-peebles-stadium",
+      "name": "Ladd Peebles Stadium",
+      "location": "Mobile",
+      "country": "United States",
+      "capacity": 40646
+    },
+    {
+      "id": "lane-stadium",
+      "name": "Lane Stadium",
+      "location": "Blacksburg",
+      "country": "United States",
+      "capacity": 65632
+    },
+    {
+      "id": "lavell-edwards-stadium",
+      "name": "LaVell Edwards Stadium",
+      "location": "Provo",
+      "country": "United States",
+      "capacity": 64045
+    },
+    {
+      "id": "legion-field-stadium",
+      "name": "Legion Field Stadium",
+      "location": "Birmingham",
+      "country": "United States",
+      "capacity": 71594
+    },
+    {
+      "id": "laopold-sadar-senghor",
+      "name": "LÃ©opold SÃ©dar Senghor",
+      "location": "Dakar",
+      "country": "Senegal",
+      "capacity": 60000
+    },
+    {
+      "id": "levy-mwanawasa-stadium",
+      "name": "Levy Mwanawasa Stadium",
+      "location": "Ndola",
+      "country": "Zambia",
+      "capacity": 40100
+    },
+    {
+      "id": "libertadores-de-amarica",
+      "name": "Libertadores de AmÃ©rica",
+      "location": "Avellaneda",
+      "country": "Argentina",
+      "capacity": 44000
+    },
+    {
+      "id": "liberty-bowl",
+      "name": "Liberty Bowl",
+      "location": "Memphis",
+      "country": "United States",
+      "capacity": 62380
+    },
+    {
+      "id": "liberty-stadium",
+      "name": "Liberty Stadium",
+      "location": "Ibadan",
+      "country": "Nigeria",
+      "capacity": 35000
+    },
+    {
+      "id": "lincoln-financial-field",
+      "name": "Lincoln Financial Field",
+      "location": "Philadelphia",
+      "country": "United States",
+      "capacity": 68532
+    },
+    {
+      "id": "lokomotiv-stadion",
+      "name": "Lokomotiv Stadion",
+      "location": "Moscow",
+      "country": "Russia",
+      "capacity": 30979
+    },
+    {
+      "id": "lp-field",
+      "name": "LP Field",
+      "location": "Nashville",
+      "country": "United States",
+      "capacity": 68932
+    },
+    {
+      "id": "lucas-oil-stadium",
+      "name": "Lucas Oil Stadium",
+      "location": "Indianapolis",
+      "country": "United States",
+      "capacity": 70000
+    },
+    {
+      "id": "luis-pirata-fuente",
+      "name": "Luis Pirata Fuente",
+      "location": "Veracruz",
+      "country": "Mexico",
+      "capacity": 43154
+    },
+    {
+      "id": "luzhniki-stadion",
+      "name": "Luzhniki Stadion",
+      "location": "Moscow",
+      "country": "Russia",
+      "capacity": 78360
+    },
+    {
+      "id": "lysgardsbakkene",
+      "name": "LysgÃ¥rdsbakkene",
+      "location": "Lillehammer",
+      "country": "Norway",
+      "capacity": 40000
+    },
+    {
+      "id": "mt-bank-stadium",
+      "name": "M&T Bank Stadium",
+      "location": "Baltimore",
+      "country": "United States",
+      "capacity": 69084
+    },
+    {
+      "id": "ma-chidambaram-stadium",
+      "name": "MA Chidambaram Stadium",
+      "location": "Chennai",
+      "country": "India",
+      "capacity": 50000
+    },
+    {
+      "id": "mackay-stadium",
+      "name": "Mackay Stadium",
+      "location": "Reno",
+      "country": "United States",
+      "capacity": 31545
+    },
+    {
+      "id": "madya-stadium",
+      "name": "Madya Stadium",
+      "location": "Jakarta",
+      "country": "Indonesia",
+      "capacity": 40000
+    },
+    {
+      "id": "malone-stadium",
+      "name": "Malone Stadium",
+      "location": "Monroe",
+      "country": "United States",
+      "capacity": 30427
+    },
+    {
+      "id": "malvinas-argentinas",
+      "name": "Malvinas Argentinas",
+      "location": "Mendoza",
+      "country": "Argentina",
+      "capacity": 34875
+    },
+    {
+      "id": "marlins-park",
+      "name": "Marlins Park",
+      "location": "Miami",
+      "country": "United States",
+      "capacity": 37000
+    },
+    {
+      "id": "martin-stadium",
+      "name": "Martin Stadium",
+      "location": "Pullman",
+      "country": "United States",
+      "capacity": 33522
+    },
+    {
+      "id": "mazda-stadium",
+      "name": "Mazda Stadium",
+      "location": "Hiroshima",
+      "country": "Japan",
+      "capacity": 32000
+    },
+    {
+      "id": "mchale-park",
+      "name": "McHale Park",
+      "location": "Castlebar",
+      "country": "Ireland",
+      "capacity": 36000
+    },
+    {
+      "id": "mcmahon-stadium",
+      "name": "McMahon Stadium",
+      "location": "Calgary",
+      "country": "Canada",
+      "capacity": 37317
+    },
+    {
+      "id": "memorial-stadium",
+      "name": "Memorial Stadium",
+      "location": "Berkeley",
+      "country": "United States",
+      "capacity": 63186
+    },
+    {
+      "id": "mercedes-benz-arena-deu",
+      "name": "Mercedes-Benz Arena",
+      "location": "Stuttgart",
+      "country": "Germany",
+      "capacity": 60441
+    },
+    {
+      "id": "mercedes-benz-superdome",
+      "name": "Mercedes-Benz Superdome",
+      "location": "New Orleans",
+      "country": "United States",
+      "capacity": 72003
+    },
+    {
+      "id": "metropolitano-de-lara",
+      "name": "Metropolitano de Lara",
+      "location": "Barquisimeto",
+      "country": "Venezuela",
+      "capacity": 40312
+    },
+    {
+      "id": "michie-stadium",
+      "name": "Michie Stadium",
+      "location": "West Point",
+      "country": "United States",
+      "capacity": 39929
+    },
+    {
+      "id": "millennium-stadium",
+      "name": "Millennium Stadium",
+      "location": "Cardiff",
+      "country": "England",
+      "capacity": 74500
+    },
+    {
+      "id": "miller-park",
+      "name": "Miller Park",
+      "location": "Milwaukee",
+      "country": "United States",
+      "capacity": 42400
+    },
+    {
+      "id": "minute-maid-park",
+      "name": "Minute Maid Park",
+      "location": "Houston",
+      "country": "United States",
+      "capacity": 40950
+    },
+    {
+      "id": "misaki-park-stadium",
+      "name": "Misaki Park Stadium",
+      "location": "Kobe",
+      "country": "Japan",
+      "capacity": 30132
+    },
+    {
+      "id": "mohamed-bin-zayed-stadium",
+      "name": "Mohamed Bin Zayed Stadium",
+      "location": "Abu Dhabi",
+      "country": "UAE",
+      "capacity": 42056
+    },
+    {
+      "id": "molineux-stadium",
+      "name": "Molineux Stadium",
+      "location": "Wolverhampton",
+      "country": "England",
+      "capacity": 31700
+    },
+    {
+      "id": "monumental-david-arellano",
+      "name": "Monumental David Arellano",
+      "location": "Santiago",
+      "country": "Chile",
+      "capacity": 47017
+    },
+    {
+      "id": "monumental-unsa",
+      "name": "Monumental UNSA",
+      "location": "Arequipa",
+      "country": "Peru",
+      "capacity": 42500
+    },
+    {
+      "id": "mosaic-stadium",
+      "name": "Mosaic Stadium",
+      "location": "Regina",
+      "country": "Canada",
+      "capacity": 30945
+    },
+    {
+      "id": "mountaineer-field",
+      "name": "Mountaineer Field",
+      "location": "Morgantown",
+      "country": "United States",
+      "capacity": 63500
+    },
+    {
+      "id": "mt-smart-stadium",
+      "name": "Mt Smart Stadium",
+      "location": "Auckland",
+      "country": "New Zealand",
+      "capacity": 35000
+    },
+    {
+      "id": "mubarak-stadium",
+      "name": "Mubarak Stadium",
+      "location": "Suez",
+      "country": "Egypt",
+      "capacity": 45000
+    },
+    {
+      "id": "mahlenkopfschanze",
+      "name": "MÃ¼hlenkopfschanze",
+      "location": "Willingen",
+      "country": "Germany",
+      "capacity": 35000
+    },
+    {
+      "id": "municipal-de-aveiro",
+      "name": "Municipal de Aveiro",
+      "location": "Aveiro",
+      "country": "Portugal",
+      "capacity": 30678
+    },
+    {
+      "id": "municipal-de-braga",
+      "name": "Municipal de Braga",
+      "location": "Braga",
+      "country": "Portugal",
+      "capacity": 30154
+    },
+    {
+      "id": "murrayfield",
+      "name": "Murrayfield",
+      "location": "Edinburgh",
+      "country": "England",
+      "capacity": 67500
+    },
+    {
+      "id": "my-dinh-stadium",
+      "name": "My Dinh Stadium",
+      "location": "Hanoi",
+      "country": "Vietnam",
+      "capacity": 40000
+    },
+    {
+      "id": "nagoya-dome",
+      "name": "Nagoya Dome",
+      "location": "Nagoya",
+      "country": "Japan",
+      "capacity": 40500
+    },
+    {
+      "id": "namboole-stadium",
+      "name": "Namboole Stadium",
+      "location": "Kampala",
+      "country": "UGA",
+      "capacity": 40000
+    },
+    {
+      "id": "national-arena",
+      "name": "National Arena",
+      "location": "Bucharest",
+      "country": "ROM",
+      "capacity": 55600
+    },
+    {
+      "id": "national-complex",
+      "name": "National Complex",
+      "location": "Monrovia",
+      "country": "LBR",
+      "capacity": 35000
+    },
+    {
+      "id": "national-olympic",
+      "name": "National Olympic",
+      "location": "Phnom Penh",
+      "country": "Cambodia",
+      "capacity": 50000
+    },
+    {
+      "id": "national-sports-stadium",
+      "name": "National Sports Stadium",
+      "location": "Harare",
+      "country": "Zimbabwe",
+      "capacity": 60000
+    },
+    {
+      "id": "national-stadium",
+      "name": "National Stadium",
+      "location": "Freetown",
+      "country": "SLE",
+      "capacity": 36000
+    },
+    {
+      "id": "nationals-ballpark",
+      "name": "Nationals Ballpark",
+      "location": "Washington",
+      "country": "United States",
+      "capacity": 41888
+    },
+    {
+      "id": "negeri-pulau-pinang",
+      "name": "Negeri Pulau Pinang",
+      "location": "Penang",
+      "country": "Malaysia",
+      "capacity": 40000
+    },
+    {
+      "id": "nelson-mandela-stadium",
+      "name": "Nelson Mandela Stadium",
+      "location": "Port Elizabeth",
+      "country": "South Africa",
+      "capacity": 48459
+    },
+    {
+      "id": "neuer-tivoli",
+      "name": "Neuer Tivoli",
+      "location": "Aachen",
+      "country": "Germany",
+      "capacity": 32900
+    },
+    {
+      "id": "newlands-stadium",
+      "name": "Newlands Stadium",
+      "location": "Cape Town",
+      "country": "South Africa",
+      "capacity": 50900
+    },
+    {
+      "id": "neyland-stadium",
+      "name": "Neyland Stadium",
+      "location": "Knoxville",
+      "country": "United States",
+      "capacity": 102037
+    },
+    {
+      "id": "niigata-stadium",
+      "name": "Niigata Stadium",
+      "location": "Niigata",
+      "country": "Japan",
+      "capacity": 42700
+    },
+    {
+      "id": "nippert-stadium",
+      "name": "Nippert Stadium",
+      "location": "Cincinnati",
+      "country": "United States",
+      "capacity": 35000
+    },
+    {
+      "id": "notre-dame-stadium",
+      "name": "Notre Dame Stadium",
+      "location": "South Bend",
+      "country": "United States",
+      "capacity": 80795
+    },
+    {
+      "id": "nottingham-city-ground",
+      "name": "Nottingham City Ground",
+      "location": "Nottingham",
+      "country": "England",
+      "capacity": 30602
+    },
+    {
+      "id": "oco-coliseum",
+      "name": "O.co Coliseum",
+      "location": "Oakland",
+      "country": "United States",
+      "capacity": 63026
+    },
+    {
+      "id": "ohene-djan-stadium",
+      "name": "Ohene Djan Stadium",
+      "location": "Accra",
+      "country": "Ghana",
+      "capacity": 40000
+    },
+    {
+      "id": "olampic-lluas-companys",
+      "name": "OlÃ­mpic LluÃ­s Companys",
+      "location": "Barcelona",
+      "country": "Spain",
+      "capacity": 56000
+    },
+    {
+      "id": "olampico-atahualpa",
+      "name": "OlÃ­mpico Atahualpa",
+      "location": "Quito",
+      "country": "Ecuador",
+      "capacity": 41000
+    },
+    {
+      "id": "olampico-joao-havelange",
+      "name": "OlÃ­mpico JoÃ£o Havelange",
+      "location": "Rio De Janeiro",
+      "country": "Brazil",
+      "capacity": 46931
+    },
+    {
+      "id": "olimpico-metropolitano",
+      "name": "Olimpico Metropolitano",
+      "location": "San Pedro Sula",
+      "country": "Honduras",
+      "capacity": 40000
+    },
+    {
+      "id": "olampico-monumental",
+      "name": "OlÃ­mpico Monumental",
+      "location": "Porto Alegre",
+      "country": "Brazil",
+      "capacity": 47000
+    },
+    {
+      "id": "olympiastadion",
+      "name": "Olympiastadion",
+      "location": "Berlin",
+      "country": "Germany",
+      "capacity": 76065
+    },
+    {
+      "id": "olympic-center-stadium",
+      "name": "Olympic Center Stadium",
+      "location": "Tianjin",
+      "country": "China",
+      "capacity": 60000
+    },
+    {
+      "id": "olympic-sports-center",
+      "name": "Olympic Sports Center",
+      "location": "Nanjing",
+      "country": "China",
+      "capacity": 61443
+    },
+    {
+      "id": "olympic-sports-centre",
+      "name": "Olympic Sports Centre",
+      "location": "Chongqing",
+      "country": "China",
+      "capacity": 58680
+    },
+    {
+      "id": "oriole-park-at-camden-yards",
+      "name": "Oriole Park at Camden Yards",
+      "location": "Baltimore",
+      "country": "United States",
+      "capacity": 45971
+    },
+    {
+      "id": "orlando-stadium",
+      "name": "Orlando Stadium",
+      "location": "Orlando",
+      "country": "South Africa",
+      "capacity": 40000
+    },
+    {
+      "id": "osaka-dome",
+      "name": "Osaka Dome",
+      "location": "Osaka",
+      "country": "Japan",
+      "capacity": 36477
+    },
+    {
+      "id": "pairc-ua-chaoimh",
+      "name": "PÃ¡irc UÃ­ Chaoimh",
+      "location": "Cork",
+      "country": "Ireland",
+      "capacity": 43000
+    },
+    {
+      "id": "paju-public-stadium",
+      "name": "Paju Public Stadium",
+      "location": "Paju",
+      "country": "South Korea",
+      "capacity": 35000
+    },
+    {
+      "id": "panathenaic-stadium",
+      "name": "Panathenaic Stadium",
+      "location": "Athens",
+      "country": "Greece",
+      "capacity": 45000
+    },
+    {
+      "id": "parque-independencia",
+      "name": "Parque Independencia",
+      "location": "Rosario",
+      "country": "Argentina",
+      "capacity": 38095
+    },
+    {
+      "id": "paul-brown-stadium",
+      "name": "Paul Brown Stadium",
+      "location": "Cincinnati",
+      "country": "United States",
+      "capacity": 65352
+    },
+    {
+      "id": "pearse-stadium",
+      "name": "Pearse Stadium",
+      "location": "Galway",
+      "country": "Ireland",
+      "capacity": 34000
+    },
+    {
+      "id": "pendleton-round-up",
+      "name": "Pendleton Round-Up",
+      "location": "Pendleton",
+      "country": "United States",
+      "capacity": 50000
+    },
+    {
+      "id": "peoples-football-stadium",
+      "name": "Peoples Football Stadium",
+      "location": "Karachi",
+      "country": "Pakistan",
+      "capacity": 40000
+    },
+    {
+      "id": "perak-stadium",
+      "name": "Perak Stadium",
+      "location": "Ipoh",
+      "country": "Malaysia",
+      "capacity": 35000
+    },
+    {
+      "id": "petco-park",
+      "name": "PETCO Park",
+      "location": "San Diego",
+      "country": "United States",
+      "capacity": 46000
+    },
+    {
+      "id": "pge-arena-gdansk",
+      "name": "PGE Arena Gdansk",
+      "location": "Gdansk",
+      "country": "Poland",
+      "capacity": 42105
+    },
+    {
+      "id": "philip-ii-arena",
+      "name": "Philip II Arena",
+      "location": "Skopje",
+      "country": "North Macedonia",
+      "capacity": 36400
+    },
+    {
+      "id": "pj-cardinal-stadium",
+      "name": "PJ Cardinal Stadium",
+      "location": "Louisville",
+      "country": "United States",
+      "capacity": 56000
+    },
+    {
+      "id": "plovdiv-stadion",
+      "name": "Plovdiv Stadion",
+      "location": "Plovdiv",
+      "country": "Bulgaria",
+      "capacity": 48000
+    },
+    {
+      "id": "pnc-park",
+      "name": "PNC Park",
+      "location": "Pittsburgh",
+      "country": "United States",
+      "capacity": 37898
+    },
+    {
+      "id": "pontiac-silverdome",
+      "name": "Pontiac Silverdome",
+      "location": "Pontiac",
+      "country": "United States",
+      "capacity": 80311
+    },
+    {
+      "id": "portman-road",
+      "name": "Portman Road",
+      "location": "Ipswich",
+      "country": "England",
+      "capacity": 30300
+    },
+    {
+      "id": "premadasa-stadium",
+      "name": "Premadasa Stadium",
+      "location": "Colombo",
+      "country": "Sri Lanka",
+      "capacity": 35000
+    },
+    {
+      "id": "presidente-peran",
+      "name": "Presidente PerÃ³n",
+      "location": "Avellaneda",
+      "country": "Argentina",
+      "capacity": 51389
+    },
+    {
+      "id": "pride-park",
+      "name": "Pride Park",
+      "location": "Derby",
+      "country": "England",
+      "capacity": 33597
+    },
+    {
+      "id": "prince-mohamed-bin-fahd",
+      "name": "Prince Mohamed bin Fahd",
+      "location": "Dammam",
+      "country": "Saudi Arabia",
+      "capacity": 35000
+    },
+    {
+      "id": "princes-park",
+      "name": "Princes Park",
+      "location": "Melbourne",
+      "country": "Australia",
+      "capacity": 35000
+    },
+    {
+      "id": "progressive-field",
+      "name": "Progressive Field",
+      "location": "Cleveland",
+      "country": "United States",
+      "capacity": 43068
+    },
+    {
+      "id": "qualcomm-stadium",
+      "name": "Qualcomm Stadium",
+      "location": "San Diego",
+      "country": "United States",
+      "capacity": 71294
+    },
+    {
+      "id": "queensland-centre",
+      "name": "Queensland Centre",
+      "location": "Brisbane",
+      "country": "Australia",
+      "capacity": 48400
+    },
+    {
+      "id": "rajamangala-stadium",
+      "name": "Rajamangala Stadium",
+      "location": "Bangkok",
+      "country": "Thailand",
+      "capacity": 65000
+    },
+    {
+      "id": "rajiv-gandhi-stadium",
+      "name": "Rajiv Gandhi Stadium",
+      "location": "Hyderabad",
+      "country": "India",
+      "capacity": 55000
+    },
+    {
+      "id": "ralph-wilson-stadium",
+      "name": "Ralph Wilson Stadium",
+      "location": "Orchard Park",
+      "country": "United States",
+      "capacity": 73967
+    },
+    {
+      "id": "raman-sanchez-pizjuan",
+      "name": "RamÃ³n SÃ¡nchez PizjuÃ¡n",
+      "location": "Sevilla",
+      "country": "Spain",
+      "capacity": 55000
+    },
+    {
+      "id": "raman-tahuichi-aguilera",
+      "name": "RamÃ³n Tahuichi Aguilera",
+      "location": "Santa Cruz",
+      "country": "Bolivia",
+      "capacity": 38000
+    },
+    {
+      "id": "rangers-ballpark",
+      "name": "Rangers Ballpark",
+      "location": "Arlington",
+      "country": "United States",
+      "capacity": 48114
+    },
+    {
+      "id": "ranji-stadium",
+      "name": "Ranji Stadium",
+      "location": "Calcutta",
+      "country": "India",
+      "capacity": 90000
+    },
+    {
+      "id": "raymond-james-stadium",
+      "name": "Raymond James Stadium",
+      "location": "Tampa",
+      "country": "United States",
+      "capacity": 65647
+    },
+    {
+      "id": "razorback-stadium",
+      "name": "Razorback Stadium",
+      "location": "Fayetteville",
+      "country": "United States",
+      "capacity": 72000
+    },
+    {
+      "id": "reliant-stadium",
+      "name": "Reliant Stadium",
+      "location": "Houston",
+      "country": "United States",
+      "capacity": 71054
+    },
+    {
+      "id": "rentschler-field",
+      "name": "Rentschler Field",
+      "location": "East Hartford",
+      "country": "United States",
+      "capacity": 40000
+    },
+    {
+      "id": "republikan-spartak",
+      "name": "Republikan Spartak",
+      "location": "Vladikavkaz",
+      "country": "Russia",
+      "capacity": 32574
+    },
+    {
+      "id": "reser-stadium",
+      "name": "Reser Stadium",
+      "location": "Corvallis",
+      "country": "United States",
+      "capacity": 44000
+    },
+    {
+      "id": "rewirpowerstadion",
+      "name": "rewirpowerSTADION",
+      "location": "Bochum",
+      "country": "Germany",
+      "capacity": 32645
+    },
+    {
+      "id": "rfk-memorial-stadium",
+      "name": "RFK Memorial Stadium",
+      "location": "Washington",
+      "country": "United States",
+      "capacity": 56454
+    },
+    {
+      "id": "riau-main-stadium",
+      "name": "Riau Main Stadium",
+      "location": "Pekanbaru",
+      "country": "Indonesia",
+      "capacity": 43923
+    },
+    {
+      "id": "rice-stadium",
+      "name": "Rice Stadium",
+      "location": "Houston",
+      "country": "United States",
+      "capacity": 70000
+    },
+    {
+      "id": "rice-eccles-stadium",
+      "name": "Rice-Eccles Stadium",
+      "location": "Salt Lake City",
+      "country": "United States",
+      "capacity": 46500
+    },
+    {
+      "id": "ricoh-arena",
+      "name": "Ricoh Arena",
+      "location": "Coventry",
+      "country": "England",
+      "capacity": 32000
+    },
+    {
+      "id": "riverside-stadium",
+      "name": "Riverside Stadium",
+      "location": "Middlesbrough",
+      "country": "England",
+      "capacity": 35049
+    },
+    {
+      "id": "roberts-stadium",
+      "name": "Roberts Stadium",
+      "location": "Hattiesburg",
+      "country": "United States",
+      "capacity": 36500
+    },
+    {
+      "id": "rogers-centre",
+      "name": "Rogers Centre",
+      "location": "Toronto",
+      "country": "Canada",
+      "capacity": 53000
+    },
+    {
+      "id": "rose-bowl-stadium",
+      "name": "Rose Bowl Stadium",
+      "location": "Pasadena",
+      "country": "United States",
+      "capacity": 92542
+    },
+    {
+      "id": "route-de-lorient",
+      "name": "Route de Lorient",
+      "location": "Rennes",
+      "country": "France",
+      "capacity": 31127
+    },
+    {
+      "id": "rubber-bowl",
+      "name": "Rubber Bowl",
+      "location": "Akron",
+      "country": "United States",
+      "capacity": 35202
+    },
+    {
+      "id": "rufaro-stadium",
+      "name": "Rufaro Stadium",
+      "location": "Harare",
+      "country": "Zimbabwe",
+      "capacity": 35000
+    },
+    {
+      "id": "rutgers-stadium",
+      "name": "Rutgers Stadium",
+      "location": "Piscataway",
+      "country": "United States",
+      "capacity": 52454
+    },
+    {
+      "id": "ryan-field",
+      "name": "Ryan Field",
+      "location": "Evanston",
+      "country": "United States",
+      "capacity": 47130
+    },
+    {
+      "id": "rynearson-stadium",
+      "name": "Rynearson Stadium",
+      "location": "Ypsilanti",
+      "country": "United States",
+      "capacity": 30200
+    },
+    {
+      "id": "safeco-field",
+      "name": "Safeco Field",
+      "location": "Seattle",
+      "country": "United States",
+      "capacity": 47116
+    },
+    {
+      "id": "salpausselka",
+      "name": "SalpausselkÃ¤",
+      "location": "Lahti",
+      "country": "Finland",
+      "capacity": 60000
+    },
+    {
+      "id": "saltlake-stadium",
+      "name": "Saltlake Stadium",
+      "location": "Calcutta",
+      "country": "India",
+      "capacity": 120000
+    },
+    {
+      "id": "sam-boyd-stadium",
+      "name": "Sam Boyd Stadium",
+      "location": "Las Vegas",
+      "country": "United States",
+      "capacity": 36800
+    },
+    {
+      "id": "samen-stadium",
+      "name": "Samen Stadium",
+      "location": "Mashhad",
+      "country": "Iran",
+      "capacity": 35000
+    },
+    {
+      "id": "sanford-stadium",
+      "name": "Sanford Stadium",
+      "location": "Athens",
+      "country": "United States",
+      "capacity": 92746
+    },
+    {
+      "id": "sang-am-stadium",
+      "name": "Sang-am Stadium",
+      "location": "Seoul",
+      "country": "South Korea",
+      "capacity": 64677
+    },
+    {
+      "id": "sarawak-stadium",
+      "name": "Sarawak Stadium",
+      "location": "Kuching",
+      "country": "Malaysia",
+      "capacity": 40000
+    },
+    {
+      "id": "sardar-patel-stadium",
+      "name": "Sardar Patel Stadium",
+      "location": "Ahmedabad",
+      "country": "India",
+      "capacity": 54000
+    },
+    {
+      "id": "schauinsland-reisen-arena",
+      "name": "Schauinsland-Reisen-Arena",
+      "location": "Duisburg",
+      "country": "Germany",
+      "capacity": 31000
+    },
+    {
+      "id": "scott-stadium",
+      "name": "Scott Stadium",
+      "location": "Charlottesville",
+      "country": "United States",
+      "capacity": 61500
+    },
+    {
+      "id": "semple-stadium",
+      "name": "Semple Stadium",
+      "location": "Thurles",
+      "country": "Ireland",
+      "capacity": 55000
+    },
+    {
+      "id": "sgl-arena",
+      "name": "SGL Arena",
+      "location": "Augsburg",
+      "country": "Germany",
+      "capacity": 30660
+    },
+    {
+      "id": "shandong-stadium",
+      "name": "Shandong Stadium",
+      "location": "Jinan",
+      "country": "China",
+      "capacity": 43700
+    },
+    {
+      "id": "shenzhen-stadium",
+      "name": "Shenzhen Stadium",
+      "location": "Shenzhen",
+      "country": "China",
+      "capacity": 33000
+    },
+    {
+      "id": "sher-e-bangla-mirpur",
+      "name": "Sher-e-Bangla Mirpur",
+      "location": "Dhaka",
+      "country": "Bangladesh",
+      "capacity": 42000
+    },
+    {
+      "id": "shiraz-stadium",
+      "name": "Shiraz Stadium",
+      "location": "Shiraz",
+      "country": "Iran",
+      "capacity": 50000
+    },
+    {
+      "id": "ska-skvo-stadion",
+      "name": "SKA SKVO Stadion",
+      "location": "Rostov-na-donu",
+      "country": "Russia",
+      "capacity": 33300
+    },
+    {
+      "id": "skelly-field",
+      "name": "Skelly Field",
+      "location": "Tulsa",
+      "country": "United States",
+      "capacity": 35542
+    },
+    {
+      "id": "skymark-stadium",
+      "name": "Skymark Stadium",
+      "location": "Kobe",
+      "country": "Japan",
+      "capacity": 35000
+    },
+    {
+      "id": "soccer-city-stadium",
+      "name": "Soccer City Stadium",
+      "location": "Johannesburg",
+      "country": "South Africa",
+      "capacity": 91141
+    },
+    {
+      "id": "solvalla-travbana",
+      "name": "Solvalla Travbana",
+      "location": "Stockholm",
+      "country": "Sweden",
+      "capacity": 35000
+    },
+    {
+      "id": "spartan-stadium",
+      "name": "Spartan Stadium",
+      "location": "East Lansing",
+      "country": "United States",
+      "capacity": 72027
+    },
+    {
+      "id": "sports-authority-field",
+      "name": "Sports Authority Field",
+      "location": "Denver",
+      "country": "United States",
+      "capacity": 76125
+    },
+    {
+      "id": "sports-direct-arena",
+      "name": "Sports Direct Arena",
+      "location": "Newcastle",
+      "country": "England",
+      "capacity": 52387
+    },
+    {
+      "id": "spruce-meadows",
+      "name": "Spruce Meadows",
+      "location": "Calgary",
+      "country": "Canada",
+      "capacity": 32000
+    },
+    {
+      "id": "st-andrews-stadium",
+      "name": "St. Andrews Stadium",
+      "location": "Birmingham",
+      "country": "England",
+      "capacity": 30016
+    },
+    {
+      "id": "st-jakob-park",
+      "name": "St. Jakob Park",
+      "location": "Basel",
+      "country": "Switzerland",
+      "capacity": 38512
+    },
+    {
+      "id": "st-marys-stadium",
+      "name": "St. Mary's Stadium",
+      "location": "Southampton",
+      "country": "England",
+      "capacity": 32000
+    },
+    {
+      "id": "st-tiernachs-park",
+      "name": "St. Tiernach's Park",
+      "location": "Clones",
+      "country": "Ireland",
+      "capacity": 36000
+    },
+    {
+      "id": "stade-19-mai-1956",
+      "name": "Stade 19 Mai 1956",
+      "location": "Annaba",
+      "country": "Algeria",
+      "capacity": 50000
+    },
+    {
+      "id": "stade-26-mars",
+      "name": "Stade 26 mars",
+      "location": "Bamako",
+      "country": "MLI",
+      "capacity": 50000
+    },
+    {
+      "id": "stade-5-juillet-1962",
+      "name": "Stade 5 Juillet 1962",
+      "location": "Algiers",
+      "country": "Algeria",
+      "capacity": 66000
+    },
+    {
+      "id": "stade-ahmed-zabana",
+      "name": "Stade Ahmed Zabana",
+      "location": "Oran",
+      "country": "Algeria",
+      "capacity": 50000
+    },
+    {
+      "id": "stade-chaban-delmas",
+      "name": "Stade Chaban Delmas",
+      "location": "Bordeaux",
+      "country": "France",
+      "capacity": 34327
+    },
+    {
+      "id": "stade-dagadir",
+      "name": "Stade d'Agadir",
+      "location": "Agadir",
+      "country": "Morocco",
+      "capacity": 45480
+    },
+    {
+      "id": "stade-dangondja",
+      "name": "Stade d'AngondjÃ©",
+      "location": "Libreville",
+      "country": "GAB",
+      "capacity": 40000
+    },
+    {
+      "id": "stade-dhonneur",
+      "name": "Stade d'Honneur",
+      "location": "Oujda",
+      "country": "Morocco",
+      "capacity": 35000
+    },
+    {
+      "id": "stade-de-gerland",
+      "name": "Stade de Gerland",
+      "location": "Lyon",
+      "country": "France",
+      "capacity": 43051
+    },
+    {
+      "id": "stade-de-lamitia",
+      "name": "Stade de l'AmitiÃ©",
+      "location": "Cotonou",
+      "country": "BEN",
+      "capacity": 35000
+    },
+    {
+      "id": "stade-de-lunita",
+      "name": "Stade de l'UnitÃ©",
+      "location": "Conakry",
+      "country": "GIN",
+      "capacity": 50000
+    },
+    {
+      "id": "stade-de-la-beaujoire",
+      "name": "Stade de la Beaujoire",
+      "location": "Nantes",
+      "country": "France",
+      "capacity": 38486
+    },
+    {
+      "id": "stade-de-la-mosson",
+      "name": "Stade de la Mosson",
+      "location": "Montpellier",
+      "country": "France",
+      "capacity": 31250
+    },
+    {
+      "id": "stade-de-la-ravolution",
+      "name": "Stade de la RÃ©volution",
+      "location": "Brazzaville",
+      "country": "COG",
+      "capacity": 50000
+    },
+    {
+      "id": "stade-de-suisse",
+      "name": "Stade de Suisse",
+      "location": "Bern",
+      "country": "Switzerland",
+      "capacity": 32000
+    },
+    {
+      "id": "stade-des-martyrs",
+      "name": "Stade des Martyrs",
+      "location": "Kinshasa",
+      "country": "DR Congo",
+      "capacity": 80000
+    },
+    {
+      "id": "stade-du-4-aoat",
+      "name": "Stade du 4-AoÃ»t",
+      "location": "Ouagadougou",
+      "country": "BFA",
+      "capacity": 40000
+    },
+    {
+      "id": "stade-el-menzah",
+      "name": "Stade El Menzah",
+      "location": "Tunis",
+      "country": "Tunisia",
+      "capacity": 45000
+    },
+    {
+      "id": "stade-f-kibassa-maliba",
+      "name": "Stade F. Kibassa Maliba",
+      "location": "Lubumbashi",
+      "country": "DR Congo",
+      "capacity": 35000
+    },
+    {
+      "id": "stade-falix-bollaert",
+      "name": "Stade FÃ©lix Bollaert",
+      "location": "Lens",
+      "country": "France",
+      "capacity": 41810
+    },
+    {
+      "id": "stade-larbi-zaouli",
+      "name": "Stade Larbi Zaouli",
+      "location": "Casablanca",
+      "country": "Morocco",
+      "capacity": 35000
+    },
+    {
+      "id": "stade-mohamed-hamlaoui",
+      "name": "Stade Mohamed-Hamlaoui",
+      "location": "Constantine",
+      "country": "Algeria",
+      "capacity": 40000
+    },
+    {
+      "id": "stade-mohammed-v",
+      "name": "Stade Mohammed V",
+      "location": "Casablanca",
+      "country": "Morocco",
+      "capacity": 67000
+    },
+    {
+      "id": "stade-moulay-abdellah",
+      "name": "Stade Moulay Abdellah",
+      "location": "Rabat",
+      "country": "Morocco",
+      "capacity": 52000
+    },
+    {
+      "id": "stade-moustapha-tchaker",
+      "name": "Stade Moustapha Tchaker",
+      "location": "Blida",
+      "country": "Algeria",
+      "capacity": 35000
+    },
+    {
+      "id": "stade-national",
+      "name": "Stade National",
+      "location": "Nouakchott",
+      "country": "MRT",
+      "capacity": 40000
+    },
+    {
+      "id": "stade-valodrome",
+      "name": "Stade VÃ©lodrome",
+      "location": "Marseille",
+      "country": "France",
+      "capacity": 60031
+    },
+    {
+      "id": "stadio-arechi",
+      "name": "Stadio Arechi",
+      "location": "Salerno",
+      "country": "Italy",
+      "capacity": 37894
+    },
+    {
+      "id": "stadio-della-vittoria",
+      "name": "Stadio della Vittoria",
+      "location": "Bari",
+      "country": "Italy",
+      "capacity": 40400
+    },
+    {
+      "id": "stadio-euganeo",
+      "name": "Stadio Euganeo",
+      "location": "Padova",
+      "country": "Italy",
+      "capacity": 32420
+    },
+    {
+      "id": "stadio-friuli",
+      "name": "Stadio Friuli",
+      "location": "Udine",
+      "country": "Italy",
+      "capacity": 30669
+    },
+    {
+      "id": "stadio-luigi-ferraris",
+      "name": "Stadio Luigi Ferraris",
+      "location": "Genova",
+      "country": "Italy",
+      "capacity": 36703
+    },
+    {
+      "id": "stadio-m-bentegodi",
+      "name": "Stadio M. Bentegodi",
+      "location": "Verona",
+      "country": "Italy",
+      "capacity": 39371
+    },
+    {
+      "id": "stadio-renato-dallara",
+      "name": "Stadio Renato dall'Ara",
+      "location": "Bologna",
+      "country": "Italy",
+      "capacity": 36532
+    },
+    {
+      "id": "stadio-renzo-barbera",
+      "name": "Stadio Renzo Barbera",
+      "location": "Palermo",
+      "country": "Italy",
+      "capacity": 36980
+    },
+    {
+      "id": "stadio-san-filippo",
+      "name": "Stadio San Filippo",
+      "location": "Messina",
+      "country": "Italy",
+      "capacity": 37895
+    },
+    {
+      "id": "stadio-san-nicola",
+      "name": "Stadio San Nicola",
+      "location": "Bari",
+      "country": "Italy",
+      "capacity": 58270
+    },
+    {
+      "id": "stadio-san-paolo",
+      "name": "Stadio San Paolo",
+      "location": "Napoli",
+      "country": "Italy",
+      "capacity": 78210
+    },
+    {
+      "id": "stadio-via-del-mare",
+      "name": "Stadio Via del Mare",
+      "location": "Lecce",
+      "country": "Italy",
+      "capacity": 33876
+    },
+    {
+      "id": "stadion-crvena-zvezda",
+      "name": "Stadion Crvena Zvezda",
+      "location": "Beograd",
+      "country": "Serbia",
+      "capacity": 51328
+    },
+    {
+      "id": "stadion-dnipro",
+      "name": "Stadion Dnipro",
+      "location": "Dnipropetrovsk",
+      "country": "Ukraine",
+      "capacity": 31003
+    },
+    {
+      "id": "stadion-feijenoord",
+      "name": "Stadion Feijenoord",
+      "location": "Rotterdam",
+      "country": "Netherlands",
+      "capacity": 51180
+    },
+    {
+      "id": "stadion-lecha",
+      "name": "Stadion Lecha",
+      "location": "Poznan",
+      "country": "Poland",
+      "capacity": 43090
+    },
+    {
+      "id": "stadion-metalist",
+      "name": "Stadion Metalist",
+      "location": "Kharkiv",
+      "country": "Ukraine",
+      "capacity": 40003
+    },
+    {
+      "id": "stadion-miejski",
+      "name": "Stadion Miejski",
+      "location": "Wroclaw",
+      "country": "Poland",
+      "capacity": 42771
+    },
+    {
+      "id": "stadion-nsk-olimpiyskiy",
+      "name": "Stadion NSK Olimpiyskiy",
+      "location": "Kiev",
+      "country": "Ukraine",
+      "capacity": 70050
+    },
+    {
+      "id": "stadion-olimpijski",
+      "name": "Stadion Olimpijski",
+      "location": "Wroclaw",
+      "country": "Poland",
+      "capacity": 35000
+    },
+    {
+      "id": "stadion-partizana",
+      "name": "Stadion Partizana",
+      "location": "Beograd",
+      "country": "Serbia",
+      "capacity": 30887
+    },
+    {
+      "id": "stadion-puskas-ferenc",
+      "name": "Stadion PuskÃ¡s Ferenc",
+      "location": "Budapest",
+      "country": "Hungary",
+      "capacity": 68976
+    },
+    {
+      "id": "stadion-shakhtar",
+      "name": "Stadion Shakhtar",
+      "location": "Donetsk",
+      "country": "Ukraine",
+      "capacity": 31718
+    },
+    {
+      "id": "stadionul-dan-paltinisanu",
+      "name": "Stadionul Dan Paltinisanu",
+      "location": "Timisoara",
+      "country": "ROM",
+      "capacity": 32000
+    },
+    {
+      "id": "stadium-ecopa",
+      "name": "Stadium Ecopa",
+      "location": "Shizuoka",
+      "country": "Japan",
+      "capacity": 51349
+    },
+    {
+      "id": "stadium-municipal",
+      "name": "Stadium Municipal",
+      "location": "Toulouse",
+      "country": "France",
+      "capacity": 36369
+    },
+    {
+      "id": "stadium-of-light",
+      "name": "Stadium of Light",
+      "location": "Sunderland",
+      "country": "England",
+      "capacity": 49000
+    },
+    {
+      "id": "stadium-of-singapore",
+      "name": "Stadium of Singapore",
+      "location": "Singapore",
+      "country": "Singapore",
+      "capacity": 55000
+    },
+    {
+      "id": "subiaco-oval",
+      "name": "Subiaco Oval",
+      "location": "Perth",
+      "country": "Australia",
+      "capacity": 42922
+    },
+    {
+      "id": "subrata-roy-sahara-stadium",
+      "name": "Subrata Roy Sahara Stadium",
+      "location": "Pune",
+      "country": "India",
+      "capacity": 55000
+    },
+    {
+      "id": "sadweststadion",
+      "name": "SÃ¼dweststadion",
+      "location": "Ludwigshafen",
+      "country": "Germany",
+      "capacity": 41383
+    },
+    {
+      "id": "sakra-saraaoglu-stadi",
+      "name": "SÃ¼krÃ¼ SaraÃ§oglu Stadi",
+      "location": "Istanbul",
+      "country": "Turkey",
+      "capacity": 50509
+    },
+    {
+      "id": "sultan-qaboos-complex",
+      "name": "Sultan Qaboos Complex",
+      "location": "Muscat",
+      "country": "Oman",
+      "capacity": 39000
+    },
+    {
+      "id": "sun-bowl",
+      "name": "Sun Bowl",
+      "location": "El Paso",
+      "country": "United States",
+      "capacity": 52000
+    },
+    {
+      "id": "sun-devil-stadium",
+      "name": "Sun Devil Stadium",
+      "location": "Tempe",
+      "country": "United States",
+      "capacity": 73379
+    },
+    {
+      "id": "suncorp-stadium",
+      "name": "Suncorp Stadium",
+      "location": "Brisbane",
+      "country": "Australia",
+      "capacity": 52579
+    },
+    {
+      "id": "surelere-stadium",
+      "name": "Surelere Stadium",
+      "location": "Lagos",
+      "country": "Nigeria",
+      "capacity": 55000
+    },
+    {
+      "id": "sydney-football-stadium",
+      "name": "Sydney Football Stadium",
+      "location": "Sydney",
+      "country": "Australia",
+      "capacity": 45500
+    },
+    {
+      "id": "target-field",
+      "name": "Target Field",
+      "location": "Minneapolis",
+      "country": "United States",
+      "capacity": 39504
+    },
+    {
+      "id": "tcf-bank-stadium",
+      "name": "TCF Bank Stadium",
+      "location": "Minneapolis",
+      "country": "United States",
+      "capacity": 50805
+    },
+    {
+      "id": "teda-football-stadium",
+      "name": "TEDA Football Stadium",
+      "location": "Tianjin",
+      "country": "China",
+      "capacity": 37450
+    },
+    {
+      "id": "tehelna-pole-stadion",
+      "name": "TehelnÃ© Pole Stadion",
+      "location": "Bratislava",
+      "country": "Slovakia",
+      "capacity": 30087
+    },
+    {
+      "id": "the-gabba",
+      "name": "The Gabba",
+      "location": "Brisbane",
+      "country": "Australia",
+      "capacity": 42000
+    },
+    {
+      "id": "the-sevens",
+      "name": "The Sevens",
+      "location": "Dubai",
+      "country": "UAE",
+      "capacity": 50000
+    },
+    {
+      "id": "tiburcio-carias-andino",
+      "name": "Tiburcio Carias Andino",
+      "location": "Tegucigalpa",
+      "country": "Honduras",
+      "capacity": 35000
+    },
+    {
+      "id": "tofiq-bakhramov-stadium",
+      "name": "Tofiq Bakhramov Stadium",
+      "location": "Baku",
+      "country": "Azerbaijan",
+      "capacity": 31200
+    },
+    {
+      "id": "tomas-adolfo-duca",
+      "name": "TomÃ¡s Adolfo DucÃ³",
+      "location": "Buenos Aires",
+      "country": "Argentina",
+      "capacity": 48314
+    },
+    {
+      "id": "tsentralnyi-profsoyuz",
+      "name": "Tsentralnyi Profsoyuz",
+      "location": "Voronezh",
+      "country": "Russia",
+      "capacity": 31743
+    },
+    {
+      "id": "tsentralnyi-stadion",
+      "name": "Tsentralnyi Stadion",
+      "location": "Kazan",
+      "country": "Russia",
+      "capacity": 30133
+    },
+    {
+      "id": "tuanku-abdul-rahman",
+      "name": "Tuanku Abdul Rahman",
+      "location": "Seremban",
+      "country": "Malaysia",
+      "capacity": 40000
+    },
+    {
+      "id": "tark-telekom-arena",
+      "name": "TÃ¼rk Telekom Arena",
+      "location": "Istanbul",
+      "country": "Turkey",
+      "capacity": 52647
+    },
+    {
+      "id": "turner-field",
+      "name": "Turner Field",
+      "location": "Atlanta",
+      "country": "United States",
+      "capacity": 50091
+    },
+    {
+      "id": "twickenham-stadium",
+      "name": "Twickenham Stadium",
+      "location": "London",
+      "country": "England",
+      "capacity": 82000
+    },
+    {
+      "id": "us-cellular-field",
+      "name": "U.S. Cellular Field",
+      "location": "Chicago",
+      "country": "United States",
+      "capacity": 40615
+    },
+    {
+      "id": "ub-stadium",
+      "name": "UB Stadium",
+      "location": "Buffalo",
+      "country": "United States",
+      "capacity": 31000
+    },
+    {
+      "id": "universiade-memorial",
+      "name": "Universiade Memorial",
+      "location": "Kobe",
+      "country": "Japan",
+      "capacity": 45000
+    },
+    {
+      "id": "universiade-stadium",
+      "name": "Universiade Stadium",
+      "location": "Shenzhen",
+      "country": "China",
+      "capacity": 60000
+    },
+    {
+      "id": "universidad-san-marcos",
+      "name": "Universidad San Marcos",
+      "location": "Lima",
+      "country": "Peru",
+      "capacity": 67469
+    },
+    {
+      "id": "universitario-p-pedrossian",
+      "name": "UniversitÃ¡rio P. Pedrossian",
+      "location": "Campo Grande",
+      "country": "Brazil",
+      "capacity": 45000
+    },
+    {
+      "id": "university-city-stadium",
+      "name": "University City Stadium",
+      "location": "Guangzhou",
+      "country": "China",
+      "capacity": 50000
+    },
+    {
+      "id": "university-of-phoenix-stadium",
+      "name": "University of Phoenix Stadium",
+      "location": "Glendale",
+      "country": "United States",
+      "capacity": 63400
+    },
+    {
+      "id": "university-stadium",
+      "name": "University Stadium",
+      "location": "Albuquerque",
+      "country": "United States",
+      "capacity": 42000
+    },
+    {
+      "id": "vanderbilt-stadium",
+      "name": "Vanderbilt Stadium",
+      "location": "Nashville",
+      "country": "United States",
+      "capacity": 39730
+    },
+    {
+      "id": "vassil-levski-stadion",
+      "name": "Vassil Levski Stadion",
+      "location": "Sofia",
+      "country": "Bulgaria",
+      "capacity": 43384
+    },
+    {
+      "id": "vaught-hemingway-stadium",
+      "name": "Vaught-Hemingway Stadium",
+      "location": "Oxford",
+      "country": "United States",
+      "capacity": 60580
+    },
+    {
+      "id": "vca-ground",
+      "name": "VCA Ground",
+      "location": "Nagpur",
+      "country": "India",
+      "capacity": 40000
+    },
+    {
+      "id": "veltins-arena",
+      "name": "Veltins Arena",
+      "location": "Gelsenkirchen",
+      "country": "Germany",
+      "capacity": 61027
+    },
+    {
+      "id": "veterans-memorial-stadium",
+      "name": "Veterans Memorial Stadium",
+      "location": "Jackson",
+      "country": "United States",
+      "capacity": 60492
+    },
+    {
+      "id": "vicente-calderan",
+      "name": "Vicente CalderÃ³n",
+      "location": "Madrid",
+      "country": "Spain",
+      "capacity": 57500
+    },
+    {
+      "id": "vodacom-park",
+      "name": "Vodacom Park",
+      "location": "Bloemfontein",
+      "country": "South Africa",
+      "capacity": 48000
+    },
+    {
+      "id": "volkswagen-arena",
+      "name": "Volkswagen Arena",
+      "location": "Wolfsburg",
+      "country": "Germany",
+      "capacity": 30122
+    },
+    {
+      "id": "waldo-stadium",
+      "name": "Waldo Stadium",
+      "location": "Kalamazoo",
+      "country": "United States",
+      "capacity": 30100
+    },
+    {
+      "id": "walkers-stadium",
+      "name": "Walkers Stadium",
+      "location": "Leicester",
+      "country": "England",
+      "capacity": 32500
+    },
+    {
+      "id": "wallace-wade-stadium",
+      "name": "Wallace Wade Stadium",
+      "location": "Durham",
+      "country": "United States",
+      "capacity": 33941
+    },
+    {
+      "id": "war-memorial-stadium",
+      "name": "War Memorial Stadium",
+      "location": "Little Rock",
+      "country": "United States",
+      "capacity": 53727
+    },
+    {
+      "id": "weserstadion",
+      "name": "Weserstadion",
+      "location": "Bremen",
+      "country": "Germany",
+      "capacity": 42354
+    },
+    {
+      "id": "westpac-stadium",
+      "name": "Westpac Stadium",
+      "location": "Wellington",
+      "country": "New Zealand",
+      "capacity": 36000
+    },
+    {
+      "id": "white-hart-lane",
+      "name": "White Hart Lane",
+      "location": "London",
+      "country": "England",
+      "capacity": 36214
+    },
+    {
+      "id": "wielka-krokiew",
+      "name": "Wielka Krokiew",
+      "location": "Zakopane",
+      "country": "Poland",
+      "capacity": 40000
+    },
+    {
+      "id": "wildparkstadion",
+      "name": "Wildparkstadion",
+      "location": "Karlsruhe",
+      "country": "Germany",
+      "capacity": 33800
+    },
+    {
+      "id": "williams-brice-stadium",
+      "name": "Williams Brice Stadium",
+      "location": "Columbia",
+      "country": "United States",
+      "capacity": 80250
+    },
+    {
+      "id": "wirsol-rhein-neckar-arena",
+      "name": "Wirsol Rhein-Neckar-Arena",
+      "location": "Sinsheim",
+      "country": "Germany",
+      "capacity": 30164
+    },
+    {
+      "id": "workers-stadium",
+      "name": "Workers Stadium",
+      "location": "Beijing",
+      "country": "China",
+      "capacity": 66161
+    },
+    {
+      "id": "wrigley-field",
+      "name": "Wrigley Field",
+      "location": "Chicago",
+      "country": "United States",
+      "capacity": 41118
+    },
+    {
+      "id": "wutaisha-stadium",
+      "name": "Wutaisha Stadium",
+      "location": "Nanjing",
+      "country": "China",
+      "capacity": 35000
+    },
+    {
+      "id": "yadegar-e-emam-stadium",
+      "name": "Yadegar e Emam Stadium",
+      "location": "Tabriz",
+      "country": "Iran",
+      "capacity": 71000
+    },
+    {
+      "id": "yankee-stadium",
+      "name": "Yankee Stadium",
+      "location": "New York",
+      "country": "United States",
+      "capacity": 52325
+    },
+    {
+      "id": "yellow-dragon-stadium",
+      "name": "Yellow Dragon Stadium",
+      "location": "Hangzhou",
+      "country": "China",
+      "capacity": 52672
+    },
+    {
+      "id": "yizhong-center",
+      "name": "Yizhong Center",
+      "location": "Qingdao",
+      "country": "China",
+      "capacity": 62000
+    },
+    {
+      "id": "zentralstadion",
+      "name": "Zentralstadion",
+      "location": "Leipzig",
+      "country": "Germany",
+      "capacity": 44345
+    }
+  ]
+}

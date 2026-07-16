@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArenaShield AI - Operations Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="dashboard-body">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-brand">
+            <i class="fas fa-shield-haltered" aria-hidden="true"></i>
+            <span>ArenaShield AI</span>
+        </div>
+        <div class="nav-links">
+            <a href="/" class="nav-link"><i class="fas fa-user"></i> Fan Assistant</a>
+            <a href="/dashboard" class="nav-link active" aria-current="page"><i class="fas fa-chart-bar"></i> Operations</a>
+        </div>
+        <div class="nav-right">
+            <span class="live-badge" id="liveBadge"><i class="fas fa-circle"></i> LIVE</span>
+        </div>
+    </nav>
+
+    <main class="dashboard-layout">
+        <header class="dashboard-header">
+            <div>
+                <h1><i class="fas fa-chart-bar"></i> Operations Command Center</h1>
+                <p class="dashboard-subtitle">AI-powered stadium monitoring &amp; decision support</p>
+                <p class="dashboard-stadium" id="dashboardStadium"><i class="fas fa-map-marker-alt"></i> <span>Loading...</span></p>
+            </div>
+            <div class="header-actions">
+                <button id="refreshBtn" class="btn-secondary" aria-label="Refresh data">
+                    <i class="fas fa-sync-alt"></i> Refresh Data
+                </button>
+                <button id="autoRefreshBtn" class="btn-secondary active" aria-label="Toggle auto refresh">
+                    <i class="fas fa-play"></i> Auto
+                </button>
+            </div>
+        </header>
+
+        <section class="stats-grid" id="overviewStats" aria-label="Overview statistics">
+            <div class="stat-card">
+                <div class="stat-icon visitors"><i class="fas fa-users"></i></div>
+                <div class="stat-info">
+                    <span class="stat-value" id="totalVisitors">--</span>
+                    <span class="stat-label">Total Visitors</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon density"><i class="fas fa-chart-line"></i></div>
+                <div class="stat-info">
+                    <span class="stat-value" id="avgDensity">--</span>
+                    <span class="stat-label">Avg Density</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon alerts"><i class="fas fa-bell"></i></div>
+                <div class="stat-info">
+                    <span class="stat-value" id="activeAlerts">--</span>
+                    <span class="stat-label">Active Alerts</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon medical"><i class="fas fa-heartbeat"></i></div>
+                <div class="stat-info">
+                    <span class="stat-value" id="medicalRequests">--</span>
+                    <span class="stat-label">Medical Requests</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon transport"><i class="fas fa-bus"></i></div>
+                <div class="stat-info">
+                    <span class="stat-value" id="shuttleBuses">--</span>
+                    <span class="stat-label">Shuttles Active</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon security"><i class="fas fa-shield-alt"></i></div>
+                <div class="stat-info">
+                    <span class="stat-value" id="securityAlerts">--</span>
+                    <span class="stat-label">Security Alerts</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="dashboard-grid">
+            <section class="panel gate-panel" aria-label="Gate monitoring">
+                <div class="panel-header">
+                    <h2><i class="fas fa-door-open"></i> Live Gate Monitoring</h2>
+                    <span class="panel-badge" id="gateCount">4 Gates</span>
+                </div>
+                <div class="gate-grid" id="gateGrid">
+                    <div class="gate-loader"><i class="fas fa-spinner fa-spin"></i> Loading gate data...</div>
+                </div>
+            </section>
+
+            <section class="panel ai-panel" aria-label="AI Copilot">
+                <div class="panel-header">
+                    <h2><i class="fas fa-brain"></i> AI Copilot</h2>
+                    <span class="panel-badge ai-badge">GenAI Active</span>
+                </div>
+                <div id="aiCopilotContent">
+                    <div class="ai-loader"><i class="fas fa-spinner fa-spin"></i> Analyzing stadium data...</div>
+                </div>
+            </section>
+
+            <section class="panel alerts-panel" aria-label="Active alerts">
+                <div class="panel-header">
+                    <h2><i class="fas fa-exclamation-triangle"></i> Active Alerts</h2>
+                    <button class="btn-sm" id="clearAlertsBtn" aria-label="Clear all alerts">Clear All</button>
+                </div>
+                <div id="alertsList">
+                    <div class="alerts-loader"><i class="fas fa-spinner fa-spin"></i> Loading alerts...</div>
+                </div>
+            </section>
+
+            <section class="panel transport-panel" aria-label="Transport status">
+                <div class="panel-header">
+                    <h2><i class="fas fa-truck"></i> Transport Status</h2>
+                </div>
+                <div id="transportInfo">
+                    <div class="transport-loader"><i class="fas fa-spinner fa-spin"></i> Loading...</div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

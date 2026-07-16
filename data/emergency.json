@@ -1,0 +1,63 @@
+{
+  "emergency_procedures": {
+    "fire": {
+      "action": "Evacuate immediately via nearest exit",
+      "do_not": ["Use elevators", "Run", "Return for belongings"],
+      "assembly_points": ["Parking Lot A", "Parking Lot C", "Plaza North"],
+      "alarm_sound": "Continuous siren + voice announcements"
+    },
+    "medical": {
+      "action": "Contact nearest first aid station or call for help",
+      "centers": ["East Block Medical", "West Block Medical", "North Concourse Main Medical"],
+      "emergency_call": "Ext. 911 or +1-800-STADIUM-911"
+    },
+    "security_threat": {
+      "action": "Follow staff instructions immediately",
+      "do_not": ["Panic", "Take photos", "Spread unverified information"],
+      "procedures": ["Shelter in place if instructed", "Follow evacuation if ordered"]
+    },
+    "severe_weather": {
+      "action": "Proceed to designated shelter areas",
+      "shelters": ["Underground Parking", "Concourse Level Interior", "Block Corridors"]
+    }
+  },
+  "emergency_contacts": [
+    {"department": "Stadium Security", "phone": "Ext. 100", "mobile": "+1-800-STADIUM-100"},
+    {"department": "Medical Emergency", "phone": "Ext. 911", "mobile": "+1-800-STADIUM-911"},
+    {"department": "Fire Safety", "phone": "Ext. 101", "mobile": "+1-800-STADIUM-101"},
+    {"department": "Control Room", "phone": "Ext. 001", "mobile": "+1-800-STADIUM-001"},
+    {"department": "Lost & Found", "phone": "Ext. 200", "mobile": "+1-800-STADIUM-200"}
+  ],
+  "medical_centers": [
+    {
+      "name": "East Block Medical Center",
+      "location": "Near Gate B, East Concourse",
+      "distance": "150m from Gate B",
+      "services": ["First Aid", "Emergency Room", "Pharmacy"],
+      "staff": "Available 24/7 during events"
+    },
+    {
+      "name": "West Block Medical Center",
+      "location": "Near Gate D, West Concourse",
+      "distance": "120m from Gate D",
+      "services": ["First Aid", "Emergency Room"],
+      "staff": "Available during events"
+    },
+    {
+      "name": "Main Medical Suite",
+      "location": "North Concourse, Level 1",
+      "distance": "Central location",
+      "services": ["Full Emergency Services", "Pharmacy", "Ambulance Access"],
+      "staff": "Full medical team available"
+    }
+  ],
+  "safety_rules": [
+    "Follow all staff instructions during emergencies",
+    "Know the location of the nearest emergency exit",
+    "Keep aisles and corridors clear at all times",
+    "Report suspicious activity to security immediately",
+    "Do not block emergency exits or fire equipment",
+    "Help those who need assistance during evacuation",
+    "Stay in your designated area unless instructed otherwise"
+  ]
+}
