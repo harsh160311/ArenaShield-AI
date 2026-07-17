@@ -62,6 +62,22 @@ def create_app():
     def health():
         return {"status": "healthy", "service": "ArenaShield AI"}
 
+    @app.route("/debug")
+    def debug():
+        key = os.getenv("OPENROUTER_API_KEY", "")
+        provider = os.getenv("AI_PROVIDER", "not set")
+        from ai.llm_engine import LLMEngine
+        llm = LLMEngine()
+        return {
+            "ai_provider": provider,
+            "openrouter_key_set": bool(key),
+            "openrouter_key_prefix": key[:8] + "..." if key else "",
+            "openrouter_key_length": len(key),
+            "llm_available": llm.is_available(),
+            "llm_provider": llm.provider,
+            "llm_client_initialized": llm.client is not None,
+        }
+
     return app
 
 
