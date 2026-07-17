@@ -760,7 +760,9 @@ function loadIncidentCommander() {
 
         if (badge) {
             badge.textContent = priority;
-            badge.style.background = priority === 'CRITICAL' ? 'var(--danger)' : priority === 'HIGH' ? 'var(--warning)' : 'var(--success)';
+            badge.style.background = priority === 'CRITICAL' ? '#C62828' : priority === 'HIGH' ? '#F57C00' : '#2E7D32';
+            badge.style.color = '#FFFFFF';
+            badge.style.fontWeight = '600';
         }
 
         var html = '';

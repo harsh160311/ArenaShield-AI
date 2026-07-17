@@ -1729,5 +1729,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 .eco-badge {
-    background: var(--success) !important;
+    background: #1B5E20 !important;
+    color: #FFFFFF !important;
+    font-weight: 600;
 }
