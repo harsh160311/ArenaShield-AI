@@ -76,7 +76,7 @@ class RAGEngine:
         if any(w in query for w in ["emergency", "fire", "evacuate", "evacuation"]):
             context["relevant_zones"].append({"type": "emergency", "data": self.emergency_data})
 
-        if any(w in query for w in ["food", "hungry", "restaurant", "concession", "comida"]):
+        if any(w in query for w in ["food", "hungry", "restaurant", "concession", "comida", "eat"]):
             context["relevant_zones"].append({"type": "food", "data": layout.get("food_zones", [])})
 
         if any(w in query for w in ["wheelchair", "accessible", "accessibility", "disability"]):

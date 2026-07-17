@@ -1,8 +1,7 @@
 import json
 import os
-import numpy as np
 import pickle
-import re
+import math
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 INDEX_PATH = os.path.join(BASE, "..", "data", "stadium_embeddings.pkl")
@@ -16,11 +15,7 @@ def _char_ngrams(text, n=3):
 
 def _text_to_vector(text, vocab):
     ngrams = _char_ngrams(text)
-    vec = np.zeros(len(vocab), dtype=np.float32)
-    for i, gram in enumerate(vocab):
-        if gram in ngrams:
-            vec[i] = 1.0
-    return vec
+    return [1.0 if gram in ngrams else 0.0 for gram in vocab]
 
 
 def _build_vocab(texts, n=3):
@@ -31,9 +26,9 @@ def _build_vocab(texts, n=3):
 
 
 def cosine_similarity(a, b):
-    dot = float(np.dot(a, b))
-    norm_a = float(np.linalg.norm(a))
-    norm_b = float(np.linalg.norm(b))
+    dot = sum(ai * bi for ai, bi in zip(a, b))
+    norm_a = math.sqrt(sum(ai * ai for ai in a))
+    norm_b = math.sqrt(sum(bi * bi for bi in b))
     if norm_a == 0 or norm_b == 0:
         return 0.0
     return dot / (norm_a * norm_b)
@@ -88,7 +83,6 @@ class VectorStore:
         for t in texts:
             self.embeddings.append(_text_to_vector(t, self.vocab))
 
-        self.embeddings = np.array(self.embeddings, dtype=np.float32)
         self._save_index()
 
     def _load_stadiums(self):
