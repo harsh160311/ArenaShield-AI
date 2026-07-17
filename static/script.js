@@ -6,6 +6,7 @@ let sessionId = generateSessionId();
 let autoRefresh = true;
 let refreshInterval = null;
 let selectedStadiumId = null;
+let voiceRecognition = null;
 
 function generateSessionId() {
     let stored = sessionStorage.getItem('arenashield_session');
@@ -25,8 +26,57 @@ document.addEventListener('DOMContentLoaded', function() {
     initEmergencyButton();
     initStadiumChangeButton();
     initDashboard();
+    initVoiceInput();
     loadDefaultStadium();
 });
+
+function initVoiceInput() {
+    const voiceBtn = document.getElementById('voiceBtn');
+    if (!voiceBtn) return;
+
+    if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+        voiceBtn.style.display = 'none';
+        return;
+    }
+
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    voiceRecognition = new SpeechRecognition();
+    voiceRecognition.continuous = false;
+    voiceRecognition.interimResults = false;
+    voiceRecognition.lang = 'en-US';
+
+    voiceRecognition.onresult = function(event) {
+        const transcript = event.results[0][0].transcript;
+        const input = document.getElementById('chatInput');
+        if (input) {
+            input.value = transcript;
+            document.getElementById('chatForm').dispatchEvent(new Event('submit'));
+        }
+    };
+
+    voiceRecognition.onerror = function() {
+        voiceBtn.classList.remove('listening');
+        voiceBtn.innerHTML = '<i class="fas fa-microphone"></i>';
+    };
+
+    voiceRecognition.onend = function() {
+        voiceBtn.classList.remove('listening');
+        voiceBtn.innerHTML = '<i class="fas fa-microphone"></i>';
+    };
+
+    voiceBtn.addEventListener('click', function() {
+        if (voiceRecognition && !voiceBtn.classList.contains('listening')) {
+            voiceBtn.classList.add('listening');
+            voiceBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+            try {
+                voiceRecognition.start();
+            } catch (e) {
+                voiceBtn.classList.remove('listening');
+                voiceBtn.innerHTML = '<i class="fas fa-microphone"></i>';
+            }
+        }
+    });
+}
 
 function loadDefaultStadium() {
     var savedId = sessionStorage.getItem('arenashield_stadium');
@@ -55,7 +105,7 @@ function loadStadiums() {
             searchInput.addEventListener('input', function() {
                 const q = this.value.trim();
                 if (q.length === 0) {
-                    results.innerHTML = '<div class="search-hint"><i class="fas fa-globe"></i><span>700+ stadiums — search or click "Use default stadium" below</span></div>';
+                    results.innerHTML = '<div class="search-hint"><i class="fas fa-globe"></i><span>774+ stadiums — search or click "Use default stadium" below</span></div>';
                     if (clearBtn) clearBtn.style.display = 'none';
                     return;
                 }
@@ -204,6 +254,17 @@ function selectStadium(stadiumId) {
         if (navInput && data.stadium) {
             navInput.placeholder = data.stadium.name;
         }
+
+        if (data.stadium && data.stadium.gates && data.stadium.gates.length > 0) {
+            const layoutInfo = document.getElementById('liveInfo');
+            if (layoutInfo) {
+                var extraHtml = '<div class="live-info-item" style="margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.1);">';
+                extraHtml += '<span class="label">Gates: ' + data.stadium.gates.length + '</span>';
+                extraHtml += '<span class="value">' + data.stadium.blocks.length + ' blocks</span>';
+                extraHtml += '</div>';
+                layoutInfo.insertAdjacentHTML('beforeend', extraHtml);
+            }
+        }
     })
     .catch(function() {
         initFanLayout();
@@ -235,7 +296,7 @@ function initStadiumChangeButton() {
                 const input = document.getElementById('stadiumSearch');
                 if (input) { input.value = ''; input.focus(); }
                 const results = document.getElementById('searchResults');
-                if (results) results.innerHTML = '<div class="search-hint"><i class="fas fa-globe"></i><span>700+ stadiums — search or click "Use default stadium" below</span></div>';
+                if (results) results.innerHTML = '<div class="search-hint"><i class="fas fa-globe"></i><span>774+ stadiums — search or click "Use default stadium" below</span></div>';
             }, 400);
         }
     };
@@ -502,8 +563,10 @@ function initDashboard() {
     loadOverview();
     loadGates();
     loadAIAnalysis();
+    loadIncidentCommander();
     loadAlerts();
     loadTransport();
+    loadSustainability();
 
     if (autoRefresh) {
         refreshInterval = setInterval(refreshAll, 10000);
@@ -546,8 +609,10 @@ function refreshAll() {
     loadOverview();
     loadGates();
     loadAIAnalysis();
+    loadIncidentCommander();
     loadAlerts();
     loadTransport();
+    loadSustainability();
 }
 
 function triggerRefresh() {
@@ -680,6 +745,86 @@ function loadAIAnalysis() {
     })
     .catch(function() {
         container.innerHTML = '<p style="padding:1rem;color:var(--text-light);">AI analysis unavailable</p>';
+    });
+}
+
+function loadIncidentCommander() {
+    const container = document.getElementById('incidentCommanderContent');
+    const badge = document.getElementById('incidentBadge');
+    if (!container) return;
+
+    fetch('/api/dashboard/incident-commander' + stadiumQueryParam())
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+        var priority = data.priority || 'LOW';
+
+        if (badge) {
+            badge.textContent = priority;
+            badge.style.background = priority === 'CRITICAL' ? 'var(--danger)' : priority === 'HIGH' ? 'var(--warning)' : 'var(--success)';
+        }
+
+        var html = '';
+        html += '<div class="ai-risk ' + priority.toLowerCase() + '">&#9878; Priority: ' + priority + '</div>';
+
+        if (data.situation) {
+            html += '<div class="ai-summary">' + data.situation + '</div>';
+        }
+
+        if (data.ai_commands) {
+            if (typeof data.ai_commands === 'string') {
+                html += '<div class="ai-summary" style="margin-top:8px;">' + formatMessage(data.ai_commands) + '</div>';
+            } else if (Array.isArray(data.ai_commands)) {
+                html += '<h4 style="font-size:0.85rem;margin-bottom:0.5rem;">Commands:</h4>';
+                html += '<ul class="ai-recommendations">';
+                data.ai_commands.forEach(function(cmd) {
+                    html += '<li>' + cmd + '</li>';
+                });
+                html += '</ul>';
+            }
+        }
+
+        container.innerHTML = html;
+    })
+    .catch(function() {
+        container.innerHTML = '<p style="padding:1rem;color:var(--text-light);">Incident Commander unavailable</p>';
+    });
+}
+
+function loadSustainability() {
+    const container = document.getElementById('sustainabilityContent');
+    if (!container) return;
+
+    fetch('/api/dashboard/sustainability')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+        var html = '';
+        html += '<div class="transport-grid">';
+        html += '<div class="transport-item"><div class="label">Energy</div><div class="value">' + data.energy_optimization + '% optimized</div></div>';
+        html += '<div class="transport-item"><div class="label">Water</div><div class="value">' + data.water_consumption + '% efficiency</div></div>';
+        html += '<div class="transport-item"><div class="label">Carbon</div><div class="value" style="text-transform:capitalize;">' + data.carbon_footprint + '</div></div>';
+        html += '</div>';
+
+        if (data.waste_bins) {
+            html += '<h4 style="font-size:0.75rem;margin:8px 0 4px;color:var(--text-light);">Waste Bins:</h4>';
+            data.waste_bins.forEach(function(bin) {
+                var statusClass = bin.fill_level > 80 ? 'full' : 'available';
+                html += '<div style="display:flex;justify-content:space-between;padding:2px 0;font-size:0.75rem;">';
+                html += '<span>Gate ' + bin.gate + '</span>';
+                html += '<span>' + bin.fill_level + '% <span class="parking-status ' + statusClass + '">' + bin.status + '</span></span>';
+                html += '</div>';
+            });
+        }
+
+        if (data.ai_suggestion) {
+            html += '<div style="margin-top:8px;padding:6px;background:rgba(212,175,55,0.1);border-radius:6px;font-size:0.75rem;">';
+            html += '<i class="fas fa-lightbulb" style="color:var(--accent);"></i> ' + data.ai_suggestion;
+            html += '</div>';
+        }
+
+        container.innerHTML = html;
+    })
+    .catch(function() {
+        container.innerHTML = '<p style="padding:1rem;color:var(--text-light);">Sustainability data unavailable</p>';
     });
 }
 

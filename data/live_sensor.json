@@ -2,28 +2,28 @@
   "gates": [
     {
       "gate": "A",
-      "density": 58,
-      "queue_time": 8,
+      "density": 52,
+      "queue_time": 10,
       "crowd_flow": "increasing",
       "status": "warning"
     },
     {
       "gate": "B",
-      "density": 60,
+      "density": 45,
       "queue_time": 14,
       "crowd_flow": "increasing",
-      "status": "warning"
+      "status": "normal"
     },
     {
       "gate": "C",
-      "density": 21,
+      "density": 40,
       "queue_time": 5,
       "crowd_flow": "increasing",
       "status": "normal"
     },
     {
       "gate": "D",
-      "density": 46,
+      "density": 31,
       "queue_time": 14,
       "crowd_flow": "increasing",
       "status": "normal"
@@ -32,32 +32,32 @@
   "total_visitors": 80000,
   "transport": {
     "shuttle_buses": {
-      "operational": 15,
+      "operational": 16,
       "en_route": 6,
       "waiting": 6
     },
     "parking": {
       "lot_a": {
         "capacity": 2000,
-        "filled": 668,
+        "filled": 699,
         "status": "available"
       },
       "lot_b": {
         "capacity": 1500,
-        "filled": 1315,
-        "status": "full"
+        "filled": 939,
+        "status": "filling"
       },
       "lot_c": {
         "capacity": 1800,
-        "filled": 780,
-        "status": "available"
+        "filled": 1106,
+        "status": "filling"
       }
     }
   },
   "incidents": {
-    "active_medical": 1,
+    "active_medical": 0,
     "security_alerts": 0,
     "maintenance_requests": 1,
-    "generated_at": "2026-07-16T06:52:28.103205"
+    "generated_at": "2026-07-17T05:31:19.640349"
   }
 }

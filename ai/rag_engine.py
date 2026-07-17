@@ -1,5 +1,7 @@
 import json
 import os
+from ai.vector_store import VectorStore
+from ai.layout_generator import generate_stadium_layout
 
 
 class RAGEngine:
@@ -9,6 +11,7 @@ class RAGEngine:
         self.stadium_data = self._get_stadium_data(stadium_id)
         self.emergency_data = self._load_json("data/emergency.json")
         self.sensor_data = self._load_json("data/live_sensor.json")
+        self.vector_store = VectorStore()
 
     def _load_json(self, path):
         try:
@@ -25,6 +28,9 @@ class RAGEngine:
             if s.get("id") == stadium_id:
                 return s
         return stadiums[0] if stadiums else {}
+
+    def _get_layout(self, stadium_id):
+        return generate_stadium_layout(stadium_id)
 
     def set_stadium(self, stadium_id):
         self.stadium_id = stadium_id
@@ -47,47 +53,55 @@ class RAGEngine:
 
     def retrieve_context(self, query):
         query = query.lower()
+        layout = self._get_layout(self.stadium_id)
+
         context = {
             "stadium": self.stadium_data,
+            "layout": layout,
             "emergency": self.emergency_data,
             "sensors": self.sensor_data,
             "relevant_zones": [],
         }
 
-        gates = self.stadium_data.get("gates", [])
+        gates = layout.get("gates", [])
         for gate in gates:
             gid = gate.get("id", "").lower()
             if gid in query:
                 context["relevant_zones"].append({"type": "gate", "data": gate})
 
         if any(w in query for w in ["medical", "doctor", "hospital", "injury", "hurt", "ayuda"]):
-            context["relevant_zones"].append({"type": "medical", "data": self.stadium_data.get("medical_rooms", [])})
+            context["relevant_zones"].append({"type": "medical", "data": layout.get("medical_rooms", [])})
             context["relevant_zones"].append({"type": "emergency", "data": self.emergency_data.get("emergency_contacts", {})})
 
         if any(w in query for w in ["emergency", "fire", "evacuate", "evacuation"]):
             context["relevant_zones"].append({"type": "emergency", "data": self.emergency_data})
 
         if any(w in query for w in ["food", "hungry", "restaurant", "concession", "comida"]):
-            context["relevant_zones"].append({"type": "food", "data": self.stadium_data.get("food_zones", [])})
+            context["relevant_zones"].append({"type": "food", "data": layout.get("food_zones", [])})
 
         if any(w in query for w in ["wheelchair", "accessible", "accessibility", "disability"]):
-            context["relevant_zones"].append({"type": "accessibility", "data": self.stadium_data})
+            context["relevant_zones"].append({"type": "accessibility", "data": layout})
 
         if any(w in query for w in ["washroom", "bathroom", "toilet", "restroom", "baño"]):
-            context["relevant_zones"].append({"type": "washroom", "data": self.stadium_data.get("washrooms", [])})
+            context["relevant_zones"].append({"type": "washroom", "data": layout.get("washrooms", [])})
+
+        vector_results = self.vector_store.search(query, top_k=3)
+        if vector_results:
+            context["vector_results"] = vector_results
 
         return context
 
     def get_stadium_context(self):
+        layout = self._get_layout(self.stadium_id)
         return {
-            "name": self.stadium_data.get("name", ""),
-            "location": self.stadium_data.get("location", ""),
-            "capacity": self.stadium_data.get("capacity", 0),
-            "gates": self.stadium_data.get("gates", []),
-            "blocks": self.stadium_data.get("seating_blocks", []),
-            "medical": self.stadium_data.get("medical_rooms", []),
-            "food": self.stadium_data.get("food_zones", []),
-            "emergency_exits": self.stadium_data.get("emergency_exits", []),
+            "name": layout.get("name", self.stadium_data.get("name", "")),
+            "location": layout.get("location", self.stadium_data.get("location", "")),
+            "capacity": layout.get("capacity", self.stadium_data.get("capacity", 0)),
+            "gates": layout.get("gates", []),
+            "blocks": layout.get("seating_blocks", []),
+            "medical": layout.get("medical_rooms", []),
+            "food": layout.get("food_zones", []),
+            "emergency_exits": layout.get("emergency_exits", []),
         }
 
     def get_crowd_summary(self):
@@ -103,7 +117,8 @@ class RAGEngine:
 
     def find_nearest_medical(self, location):
         location = location.lower()
-        rooms = self.stadium_data.get("medical_rooms", [])
+        layout = self._get_layout(self.stadium_id)
+        rooms = layout.get("medical_rooms", [])
         for room in rooms:
             if location in room.get("location", "").lower():
                 return room
@@ -111,7 +126,8 @@ class RAGEngine:
 
     def find_nearest_exit(self, location):
         location = location.lower()
-        for gate in self.stadium_data.get("gates", []):
+        layout = self._get_layout(self.stadium_id)
+        for gate in layout.get("gates", []):
             if location in gate.get("name", "").lower():
                 return gate
-        return self.stadium_data.get("gates", [{}])[0] if self.stadium_data.get("gates") else {"name": "Gate A"}
+        return layout.get("gates", [{}])[0] if layout.get("gates") else {"name": "Gate A"}

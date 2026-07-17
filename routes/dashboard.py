@@ -3,6 +3,8 @@ import os
 from flask import Blueprint, jsonify, request
 from ai.decision_engine import DecisionEngine
 from ai.rag_engine import RAGEngine
+from ai.sustainability import SustainabilityEngine
+from ai.incident_commander import IncidentCommander
 from simulator.crowd_generator import CrowdGenerator
 from simulator.transport_generator import TransportGenerator
 from simulator.incident_generator import IncidentGenerator
@@ -11,6 +13,8 @@ from database.models import db, SensorReading
 dashboard_bp = Blueprint("dashboard", __name__)
 rag = RAGEngine()
 decision_engine = DecisionEngine()
+sustainability = SustainabilityEngine()
+incident_commander = IncidentCommander()
 crowd_gen = CrowdGenerator()
 transport_gen = TransportGenerator()
 incident_gen = IncidentGenerator()
@@ -20,6 +24,7 @@ def _sync_stadium():
     stadium_id = request.args.get("stadium_id") or (request.get_json(silent=True) or {}).get("stadium_id")
     if stadium_id and stadium_id != rag.stadium_id:
         rag.set_stadium(stadium_id)
+
 
 def load_sensor_data():
     base = os.path.dirname(os.path.abspath(__file__))
@@ -104,6 +109,19 @@ def ai_analysis():
     return jsonify(analysis)
 
 
+@dashboard_bp.route("/api/dashboard/incident-commander", methods=["GET"])
+def incident_commander_route():
+    _sync_stadium()
+    sensor_data = load_sensor_data()
+    assessment = incident_commander.assess(sensor_data)
+    return jsonify(assessment)
+
+
+@dashboard_bp.route("/api/dashboard/sustainability", methods=["GET"])
+def sustainability_status():
+    return jsonify(sustainability.get_status())
+
+
 @dashboard_bp.route("/api/dashboard/refresh", methods=["POST"])
 def refresh_data():
     crowd_data = crowd_gen.generate()
@@ -133,6 +151,7 @@ def refresh_data():
 def dashboard_stadium():
     _sync_stadium()
     return jsonify({"stadium": rag.get_stadium_context()})
+
 
 @dashboard_bp.route("/api/dashboard/sensor-history", methods=["GET"])
 def sensor_history():

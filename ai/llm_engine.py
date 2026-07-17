@@ -1,10 +1,31 @@
 import os
 import re
 from config import Config
+from ai.prompts import SYSTEM_PROMPT, SYSTEM_PROMPT_SAFETY
+
+PROMPT_INJECTION_PATTERNS = [
+    r"ignore\s+(all\s+)?(previous|above|prior)",
+    r"forget\s+(all\s+)?(instructions|rules|prompts)",
+    r"you\s+are\s+(not\s+)?(an?\s+)?(ai|assistant|chatbot)",
+    r"system\s+prompt",
+    r"api[_\s]?key",
+    r"show\s+(me\s+)?your\s+(prompt|instructions|source)",
+    r"act\s+as\s+(a\s+)?(sudo|root|admin|superuser)",
+    r"password|secret|token|credential",
+    r"DAN|jailbreak|bypass",
+]
 
 
 def _has_word(text, word):
     return bool(re.search(r'\b' + re.escape(word) + r'\b', text.lower()))
+
+
+def _is_injection_attempt(message):
+    msg_lower = message.lower()
+    for pattern in PROMPT_INJECTION_PATTERNS:
+        if re.search(pattern, msg_lower):
+            return True
+    return False
 
 
 class LLMEngine:
@@ -55,8 +76,13 @@ class LLMEngine:
         return False
 
     def generate(self, system_prompt, user_prompt, language="en"):
+        if _is_injection_attempt(user_prompt):
+            return "I can only assist with stadium-related questions. How can I help you with your visit today?"
+
+        combined_prompt = f"{SYSTEM_PROMPT}\n\n{SYSTEM_PROMPT_SAFETY}\n\n{system_prompt}"
+
         if self.is_available():
-            return self._call_api(system_prompt, user_prompt)
+            return self._call_api(combined_prompt, user_prompt)
         return self._fallback_generate(system_prompt, user_prompt, language)
 
     def _call_api(self, system_prompt, user_prompt):
@@ -160,36 +186,36 @@ class LLMEngine:
         from_location = f"Gate {gate}"
 
         routes = {
-            "A": "Gate A → Main Concourse → Corridor 1 → Block",
-            "B": "Gate B → Corridor 2 → Block",
-            "C": "Gate C → West Concourse → Corridor 3 → Block",
-            "D": "Gate D → East Concourse → Corridor 4 → Block",
+            "A": "Gate A \u2192 Main Concourse \u2192 Corridor 1 \u2192 Block",
+            "B": "Gate B \u2192 Corridor 2 \u2192 Block",
+            "C": "Gate C \u2192 West Concourse \u2192 Corridor 3 \u2192 Block",
+            "D": "Gate D \u2192 East Concourse \u2192 Corridor 4 \u2192 Block",
         }
 
-        route = routes.get(gate, "Gate → Main Concourse → Block")
+        route = routes.get(gate, "Gate \u2192 Main Concourse \u2192 Block")
         times = {"A": "4", "B": "3", "C": "5", "D": "4"}
 
         if language == "es":
             return (
-                f"**Ubicación Actual:** {from_location}\n\n"
+                f"**Ubicaci\u00f3n Actual:** {from_location}\n\n"
                 f"**Ruta Recomendada:**\n{route} {block}\n\n"
                 f"**Tiempo Estimado:** {times.get(gate, '4')} minutos\n\n"
                 f"**Estado de Multitud:** Bajo\n\n"
-                f"**Consejo:** Siga las señalizaciones azules hacia su bloque."
+                f"**Consejo:** Siga las se\u00f1alizaciones azules hacia su bloque."
             )
         elif language == "hi":
             return (
-                f"**वर्तमान स्थान:** {from_location}\n\n"
-                f"**अनुशंसित मार्ग:**\n{route} {block}\n\n"
-                f"**अनुमानित समय:** {times.get(gate, '4')} मिनट\n\n"
-                f"**भीड़ की स्थिति:** कम\n\n"
-                f"**सुझाव:** अपने ब्लॉक की ओर नीले संकेतों का पालन करें।"
+                f"**\u0935\u0930\u094d\u0924\u092e\u093e\u0928 \u0938\u094d\u0925\u093e\u0928:** {from_location}\n\n"
+                f"**\u0905\u0928\u0941\u0936\u0902\u0938\u093f\u0924 \u092e\u093e\u0930\u094d\u0917:**\n{route} {block}\n\n"
+                f"**\u0905\u0928\u0941\u092e\u093e\u0928\u093f\u0924 \u0938\u092e\u092f:** {times.get(gate, '4')} \u092e\u093f\u0928\u091f\n\n"
+                f"**\u092d\u0940\u0921\u093c \u0915\u0940 \u0938\u094d\u0925\u093f\u0924\u093f:** \u0915\u092e\n\n"
+                f"**\u0938\u0941\u091d\u093e\u0935:** \u0905\u092a\u0928\u0947 \u092c\u094d\u0932\u0949\u0915 \u0915\u0940 \u0913\u0930 \u0928\u0940\u0932\u0947 \u0938\u0902\u0915\u0947\u0924\u094b\u0902 \u0915\u093e \u092a\u093e\u0932\u0928 \u0915\u0930\u0947\u0902\u0964"
             )
         elif language == "fr":
             return (
                 f"**Position Actuelle:** {from_location}\n\n"
-                f"**Itinéraire Recommandé:**\n{route} {block}\n\n"
-                f"**Temps Estimé:** {times.get(gate, '4')} minutes\n\n"
+                f"**Itin\u00e9raire Recommand\u00e9:**\n{route} {block}\n\n"
+                f"**Temps Estim\u00e9:** {times.get(gate, '4')} minutes\n\n"
                 f"**Affluence:** Faible\n\n"
                 f"**Conseil:** Suivez les panneaux bleus vers votre bloc."
             )
@@ -205,23 +231,23 @@ class LLMEngine:
     def _medical_response(self, query, language):
         if language == "es":
             return (
-                "**Se requiere asistencia médica.**\n\n"
-                "**Centro Médico más cercano:**\n"
+                "**Se requiere asistencia m\u00e9dica.**\n\n"
+                "**Centro M\u00e9dico m\u00e1s cercano:**\n"
                 "East Block - Primeros Auxilios\n\n"
                 "**Distancia:** 150 metros\n\n"
                 "**Contacto de Emergencia:** +1-800-STADIUM-911\n\n"
-                "**Instrucciones:** Diríjase al Centro Médico del East Block. "
-                "Personal de primeros auxilios también está disponible en todas las puertas."
+                "**Instrucciones:** Dir\u00edjase al Centro M\u00e9dico del East Block. "
+                "Personal de primeros auxilios tambi\u00e9n est\u00e1 disponible en todas las puertas."
             )
         elif language == "hi":
             return (
-                "**चिकित्सा सहायता की आवश्यकता है।**\n\n"
-                "**निकटतम चिकित्सा केंद्र:**\n"
-                "ईस्ट ब्लॉक - प्राथमिक चिकित्सा\n\n"
-                "**दूरी:** 150 मीटर\n\n"
-                "**आपातकालीन संपर्क:** +1-800-STADIUM-911\n\n"
-                "**निर्देश:** कृपया ईस्ट ब्लॉक चिकित्सा केंद्र पर जाएं। "
-                "सभी गेटों पर प्राथमिक चिकित्सा कर्मी उपलब्ध हैं।"
+                "**\u091a\u093f\u0915\u093f\u0924\u094d\u0938\u093e \u0938\u0939\u093e\u092f\u0924\u093e \u0915\u0940 \u0906\u0935\u0936\u094d\u092f\u0915\u0924\u093e \u0939\u0948\u0964**\n\n"
+                "**\u0928\u093f\u0915\u091f\u0924\u092e \u091a\u093f\u0915\u093f\u0924\u094d\u0938\u093e \u0915\u0947\u0902\u0926\u094d\u0930:**\n"
+                "\u0908\u0938\u094d\u091f \u092c\u094d\u0932\u0949\u0915 - \u092a\u094d\u0930\u093e\u0925\u092e\u093f\u0915 \u091a\u093f\u0915\u093f\u0924\u094d\u0938\u093e\n\n"
+                "**\u0926\u0942\u0930\u0940:** 150 \u092e\u0940\u091f\u0930\n\n"
+                "**\u0906\u092a\u093e\u0924\u0915\u093e\u0932\u0940\u0928 \u0938\u0902\u092a\u0930\u094d\u0915:** +1-800-STADIUM-911\n\n"
+                "**\u0928\u093f\u0930\u094d\u0926\u0947\u0936:** \u0915\u0943\u092a\u092f\u093e \u0908\u0938\u094d\u091f \u092c\u094d\u0932\u0949\u0915 \u091a\u093f\u0915\u093f\u0924\u094d\u0938\u093e \u0915\u0947\u0902\u0926\u094d\u0930 \u092a\u0930 \u091c\u093e\u090f\u0902\u0964 "
+                "\u0938\u092d\u0940 \u0917\u0947\u091f\u094b\u0902 \u092a\u0930 \u092a\u094d\u0930\u093e\u0925\u092e\u093f\u0915 \u091a\u093f\u0915\u093f\u0924\u094d\u0938\u093e \u0915\u0930\u094d\u092e\u0940 \u0909\u092a\u0932\u092c\u094d\u0927 \u0939\u0948\u0902\u0964"
             )
         else:
             return (
@@ -243,12 +269,12 @@ class LLMEngine:
             "3. Do NOT use elevators\n"
             "4. Proceed to the nearest assembly point\n\n"
             "**Nearest Emergency Exits:**\n"
-            "• Gate A - North Exit\n"
-            "• Corridor 2 - East Exit\n\n"
+            "\u2022 Gate A - North Exit\n"
+            "\u2022 Corridor 2 - East Exit\n\n"
             "**Emergency Contacts:**\n"
-            "• Stadium Security: +1-800-STADIUM-911\n"
-            "• Medical Emergency: Ext. 911\n"
-            "• Fire Safety: Ext. 100\n\n"
+            "\u2022 Stadium Security: +1-800-STADIUM-911\n"
+            "\u2022 Medical Emergency: Ext. 911\n"
+            "\u2022 Fire Safety: Ext. 100\n\n"
             "Staff are being notified. Follow their instructions."
         )
 
@@ -256,14 +282,14 @@ class LLMEngine:
         return (
             "**Food & Beverage Options:**\n\n"
             "**Central Plaza Food Court:**\n"
-            "• Gourmet Burgers - Section C1\n"
-            "• Pizza World - Section C2\n"
-            "• Asian Wok - Section C3\n\n"
+            "\u2022 Gourmet Burgers - Section C1\n"
+            "\u2022 Pizza World - Section C2\n"
+            "\u2022 Asian Wok - Section C3\n\n"
             "**Block Concessions:**\n"
-            "• Block A: Hot Dogs & Nachos\n"
-            "• Block B: Sandwiches & Salads\n"
-            "• Block C: Mexican Grill\n"
-            "• Block D: Ice Cream & Desserts\n\n"
+            "\u2022 Block A: Hot Dogs & Nachos\n"
+            "\u2022 Block B: Sandwiches & Salads\n"
+            "\u2022 Block C: Mexican Grill\n"
+            "\u2022 Block D: Ice Cream & Desserts\n\n"
             "**Estimated Wait Time:** 5-8 minutes\n"
             "**Tip:** Use the ArenaShield app to pre-order and skip the line!"
         )
@@ -283,12 +309,12 @@ class LLMEngine:
         return (
             "**Transportation Options:**\n\n"
             "**Shuttle Buses:** Available at all gates\n"
-            "• Route 1: Stadium ↔ City Center (Every 10 min)\n"
-            "• Route 2: Stadium ↔ Parking Lots A-D (Every 5 min)\n\n"
+            "\u2022 Route 1: Stadium \u2194 City Center (Every 10 min)\n"
+            "\u2022 Route 2: Stadium \u2194 Parking Lots A-D (Every 5 min)\n\n"
             "**Parking:**\n"
-            "• Lot A: 25% available (recommended)\n"
-            "• Lot B: 85% full\n"
-            "• Lot C: 60% full\n\n"
+            "\u2022 Lot A: 25% available (recommended)\n"
+            "\u2022 Lot B: 85% full\n"
+            "\u2022 Lot C: 60% full\n\n"
             "**Metro Station:** Stadium West (5 min walk)"
         )
 
@@ -296,13 +322,13 @@ class LLMEngine:
         return (
             "**Accessibility Services:**\n\n"
             "**Wheelchair-Accessible Routes:**\n"
-            "• All gates have ramp access\n"
-            "• Elevators at Block A, C, and Central Plaza\n"
-            "• Accessible seating in all blocks\n\n"
+            "\u2022 All gates have ramp access\n"
+            "\u2022 Elevators at Block A, C, and Central Plaza\n"
+            "\u2022 Accessible seating in all blocks\n\n"
             "**Special Assistance:**\n"
-            "• Request wheelchair at any gate\n"
-            "• Visual assistance available\n"
-            "• Hearing assistance devices at Information Desk\n\n"
+            "\u2022 Request wheelchair at any gate\n"
+            "\u2022 Visual assistance available\n"
+            "\u2022 Hearing assistance devices at Information Desk\n\n"
             "**Contact Accessibility Services:** Ext. 500"
         )
 
@@ -310,26 +336,26 @@ class LLMEngine:
         return (
             "**Washroom Locations:**\n\n"
             "**Near Gates:**\n"
-            "• Gate A: Left corridor, 20m\n"
-            "• Gate B: Right corridor, 15m\n"
-            "• Gate C: Behind concession stand\n"
-            "• Gate D: Near entrance, 10m\n\n"
+            "\u2022 Gate A: Left corridor, 20m\n"
+            "\u2022 Gate B: Right corridor, 15m\n"
+            "\u2022 Gate C: Behind concession stand\n"
+            "\u2022 Gate D: Near entrance, 10m\n\n"
             "**Inside Blocks:**\n"
-            "• Each block has facilities at both ends\n"
-            "• Family washrooms at Block B and D\n"
-            "• Accessible washrooms at all locations"
+            "\u2022 Each block has facilities at both ends\n"
+            "\u2022 Family washrooms at Block B and D\n"
+            "\u2022 Accessible washrooms at all locations"
         )
 
     def _general_response(self, query, language):
         return (
             "Welcome to ArenaShield AI! I'm your stadium assistant. "
             "I can help you with:\n\n"
-            "📍 **Navigation** - Find your seat, gates, amenities\n"
-            "🚑 **Medical** - Locate medical centers and first aid\n"
-            "🍔 **Food** - Discover dining options\n"
-            "♿ **Accessibility** - Wheelchair routes and assistance\n"
-            "🚌 **Transport** - Parking, shuttles, and transit\n"
-            "📊 **Crowd Info** - Live density and wait times\n\n"
+            "\U0001f4cd **Navigation** - Find your seat, gates, amenities\n"
+            "\U0001f691 **Medical** - Locate medical centers and first aid\n"
+            "\U0001f354 **Food** - Discover dining options\n"
+            "\u267f **Accessibility** - Wheelchair routes and assistance\n"
+            "\U0001f68c **Transport** - Parking, shuttles, and transit\n"
+            "\U0001f4ca **Crowd Info** - Live density and wait times\n\n"
             "How can I help you today?"
         )
 
@@ -348,7 +374,7 @@ class LLMEngine:
                 pass
 
         msg = message.lower()
-        if any(_has_word(message, w) for w in ["medical", "doctor", "hospital", "injury", "hurt", "ayuda", "médica", "health"]):
+        if any(_has_word(message, w) for w in ["medical", "doctor", "hospital", "injury", "hurt", "ayuda", "m\u00e9dica", "health"]):
             return "medical"
         if any(_has_word(message, w) for w in ["emergency", "fire", "evacuate", "help", "danger"]):
             return "emergency"
@@ -365,24 +391,26 @@ class LLMEngine:
         return "information"
 
     def detect_language(self, message):
-        spanish_indicators = ["hola", "ayuda", "gracias", "por favor", "dónde", "qué",
-                              "el", "la", "los", "las", "necesito", "quiero", "médica",
-                              "emergencia", "baño", "comida", "salida"]
-        french_indicators = ["bonjour", "merci", "s'il vous plaît", "où", "aide",
-                             "urgence", "médical", "toilettes", "nourriture", "sortie"]
-        hindi_indicators = ["नमस्ते", "मदद", "कहाँ", "क्या", "चाहिए", "बाथरूम",
-                            "खाना", "द्वार", "सीट"]
+        spanish_indicators = ["hola", "ayuda", "gracias", "por favor", "d\u00f3nde", "qu\u00e9",
+                              "los", "las", "necesito", "quiero", "m\u00e9dica",
+                              "emergencia", "ba\u00f1o", "comida", "salida"]
+        french_indicators = ["bonjour", "merci", "s'il vous pla\u00eet", "o\u00f9", "aide",
+                             "urgence", "m\u00e9dical", "toilettes", "nourriture", "sortie"]
+        hindi_indicators = ["\u0928\u092e\u0938\u094d\u0924\u0947", "\u092e\u0926\u0926", "\u0915\u0939\u093e\u0901", "\u0915\u094d\u092f\u093e", "\u091a\u093e\u0939\u093f\u090f",
+                            "\u092c\u093e\u0925\u0930\u0942\u092e", "\u0916\u093e\u0928\u093e", "\u0926\u094d\u0935\u093e\u0930", "\u0938\u0940\u091f"]
 
         msg_lower = message.lower()
-        for indicator in spanish_indicators:
-            if indicator in msg_lower:
-                return "es"
-        for indicator in french_indicators:
-            if indicator in msg_lower:
-                return "fr"
 
         has_devanagari = bool(re.search(r'[\u0900-\u097F]', message))
         if has_devanagari:
             return "hi"
+
+        for indicator in french_indicators:
+            if indicator in msg_lower:
+                return "fr"
+
+        for indicator in spanish_indicators:
+            if indicator in msg_lower:
+                return "es"
 
         return "en"
