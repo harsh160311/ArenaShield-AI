@@ -471,17 +471,19 @@ function syncDashboardStadium() {
     if (!stadiumEl) return;
 
     if (stored) {
-        try {
-            var parsed = JSON.parse(stored);
-            stadiumEl.innerHTML = '<i class="fas fa-map-marker-alt"></i> <span>' + parsed.name + ', ' + parsed.location + '</span>';
-            fetch('/api/stadium/select', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ stadium_id: parsed.id })
-            }).catch(function() {});
-        } catch(e) {
+        fetch('/api/stadium/select', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ stadium_id: stored })
+        })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            if (data.stadium && data.stadium.name) {
+                stadiumEl.innerHTML = '<i class="fas fa-map-marker-alt"></i> <span>' + data.stadium.name + ', ' + data.stadium.location + '</span>';
+            }
+        }).catch(function() {
             stadiumEl.innerHTML = '<i class="fas fa-map-marker-alt"></i> <span>Default Stadium</span>';
-        }
+        });
     } else {
         fetch('/api/dashboard/stadium')
         .then(function(r) { return r.json(); })
@@ -592,10 +594,7 @@ function loadOverview() {
 function stadiumQueryParam() {
     var stored = sessionStorage.getItem('arenashield_stadium');
     if (stored) {
-        try {
-            var parsed = JSON.parse(stored);
-            return '?stadium_id=' + encodeURIComponent(parsed.id);
-        } catch(e) {}
+        return '?stadium_id=' + encodeURIComponent(stored);
     }
     return '';
 }
